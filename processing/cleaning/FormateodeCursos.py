@@ -31,7 +31,37 @@ def procesar_profesores(profesores_str):
     
     # Convertir la lista de nuevo a string con el formato adecuado
     return f"['{', '.join(profesores_formateados)}']"
+def procesar_requisitos(requisitos_list):
+    if isinstance(requisitos_list, str):
+        requisitos_list = re.findall(r"'(.*?)'", requisitos_list)
+    
+    if not requisitos_list :
+        return ["No_tiene"]
+    
+    if  any(" " in req for req in requisitos_list):
+        # print(requisitos_list[0].replace(' ', '_'))
+        return [requisitos_list[0].replace(' ', '_')]
+        # new = []
+        # for req in requisitos_list:
+        #     if " " in req:
+        #         req = req.replace(' ', '_') 
+        #     if isinstance(req, str):
+        #         req = [req]
+        # return requisitos_list
+            
 
+    if any("/" in req for req in requisitos_list):
+        new = []
+        for req in requisitos_list:
+            req = req.replace('(', '').replace(')', '')
+            if '/' in req:
+                req = req.split('/')
+            if isinstance(req, str):
+                req = [req]
+            new += req
+        return new
+
+    return  requisitos_list
 def procesar_csv(input_file, output_file):
     with open(input_file, mode='r', encoding='utf-8') as infile, open(output_file, mode='w', encoding='utf-8', newline='') as outfile:
         reader = csv.reader(infile)
@@ -44,11 +74,14 @@ def procesar_csv(input_file, output_file):
         # Procesar las filas restantes
         for row in reader:
             if len(row) > 4:  # Asegurarse de que la columna de profesores exista
+                
+                row[3]=procesar_requisitos(row[3])
+                print(row[3])
                 row[4] = procesar_profesores(row[4])
             writer.writerow(row)
 
 # Rutas de los archivos
-archivo_entrada = 'cursos.csv'
+archivo_entrada = './courses_info.csv'
 archivo_salida = 'cursos_formateados.csv'
 
 procesar_csv(archivo_entrada, archivo_salida)
