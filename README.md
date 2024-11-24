@@ -24,8 +24,9 @@ Este proyecto es parte del curso de Linked Data (CC7220) y tiene como objetivo e
 ## Uso
 
 1. Ejecuta el script de scraping:
+    para profesores
     ```bash
-    python scripts/script_xyz.py
+    python scraping/scraper_professors.py DIM  # DIM es el departamento de interés (el alcance del proyecto es DIM, DCC )
     ```
 
 

@@ -1,0 +1,47 @@
+Titulo,Codigo,Creditos,Requisitos,Profesores
+Introducción al Cálculo,MA1001,6,['No tiene'],"['Javier Ramírez Ganga', 'Jessica Trespalacios J.', 'Gabrielle Nornberg', 'Patricio Quiroz H.']"
+Cálculo Diferencial e Integral,MA1002,6,['(MA1001/MA100)'],"['Patricio Felmer A.', 'Pedro Perez Aros', 'Cristián Reyes', 'Javier Ramírez Ganga', 'Rodolfo Gutiérrez Romo', 'Leonardo Sánchez C.', 'Jorge A. San Martín H.']"
+Introducción al Álgebra,MA1101,6,['No tiene'],"['Iván Rapaport', 'Maya Stein', 'Flavio Guiñez A.']"
+Álgebra Lineal,MA1102,6,['(MA1101/MA110)'],"['Natacha Astromujoff', 'Vicente Acuña A.', 'Marcos Kiwi', 'Jaime San Martín', 'Mauricio Telias H.', 'Alejandro Maass S.', 'Martín Matamala', 'Pablo R. Dartnell R.', 'Melanie Sánchez P.']"
+Cálculo en Varias Variables,MA2001,6,"['(MA1002/MA1A2)', '(MA1102/MA1B2)']","['Javier Ramírez Ganga', 'Alexis Fuentes P.', 'Patricio Quiroz H.']"
+Cálculo Avanzado y Aplicaciones,MA2002,6,"['(MA2001/MA2A1)', '(MA2601/MA2G1)']","['Carlos Conca R.', 'Jorge A. San Martín H.', 'Avelio Sepúlveda', 'Pablo Araya Z.', 'Jaime Ortega P.', 'Ricardo Carlos F.']"
+Ecuaciones Diferenciales Ordinarias,MA2601,6,"['(MA1002/MA1A2)', '(MA1102/MA1B2)']","['Jessica Trespalacios J.', 'Gabrielle Nornberg']"
+Tópicos en Análisis Convexo,MA3002,6,['MA2001'],['Rafael Correa F.']
+Elementos de Álgebra,MA3101,6,['MA2001/MA2A1'],['Maya Stein']
+Estadística,MA3402,6,['MA3401/MA34A'],['Joaquin Fontbona T.']
+Probabilidades y Estadística,MA3403,6,['MA2001/MA2A1'],"['Raul Gouet B.', 'Fernando Lema F.', 'Servet Martinez A.']"
+Optimización,MA3701,6,['MA2002'],['Jorge G. Amaya A.']
+Algoritmos Combinatoriales,MA3705,6,['MA3711'],['José A. Soto S.']
+Análisis,MA3801,9,['MA2002/MA2A2'],['Hanne Van Den Bosch']
+Teoría de la Medida,MA3802,9,['MA3801'],['Jaime San Martín']
+Introducción a la Historia de la Matemática,MA4111,6,['MA3801'],['Raúl Gormaz A.']
+Simulación Estocástica: Teoría y Laboratorio,MA4402,6,['MA4401'],['Avelio Sepúlveda']
+Control Óptimo: Teoría y Laboratorio,MA4703,9,['MA4801'],['Héctor Ramírez C.']
+Análisis Funcional,MA4801,6,['MA3802'],['Salome Martinez S.']
+Ecuaciones en Derivadas Parciales,MA4802,9,['MA4801'],"['Claudio Muñoz C.', 'Rayssa Aires de Lima Caju']"
+Práctica Profesional I,MA4902,7,['MA3402/AUTOR'],['Hanne Van Den Bosch']
+Problemas Inversos y de Control de EDP,MA5306,6,['MA4601/MA4802'],['Axel Osses A.']
+Cálculo Estocástico,MA5402,6,['MA4401'],['Daniel Remenik']
+Laboratorio de Modelamiento Matemático I,MA5500,6,['MA49A/MA4902/AUTOR'],"['Jaime San Martín', 'Alejandro Maass S.']"
+Teoría de Grafos,MA5505,6,['MA3705'],['Martín Matamala']
+Seminario de Recurrencia en Teoría Ergódica,MA5506,6,['MA3802/MA5802'],['Sebastián Donoso F.']
+Ecología Matemática,MA5509,6,['MA2002'],['Salome Martinez S.']
+Análisis no Lineal,MA5603,6,['MA5601/MA4802'],['Raul Manasevich T.']
+Análisis Convexo y Dualidad,MA5801,6,['MA4801/AUTOR'],['Alejandro Jofré C.']
+Práctica Profesional II,MA5902,7,"['(MA4902', '(MA4402/MA4703))']",['Hanne Van Den Bosch']
+Computación Distribuida,MA6140,6,['MA3705/AUTOR'],['Iván Rapaport']
+Seminarios,MA6420,"MA4230,AUTOR",['Electivo Doctorado'],['Daniel Remenik']
+Práctica Profesional III,MA6902,7,"['(MA5902', 'MA4703)/AUTOR']",['Hanne Van Den Bosch']
+Introducción al Trabajo de Título,MA6908,3,['No tiene'],['Hanne Van Den Bosch']
+Trabajo de Título,MA6909,21,"['(MA6908/MA6907)', '(EI4205S/EI2090)']",['Hanne Van Den Bosch']
+Trabajo de Memoria de Título,MA6910,21,"['(MA6908/MA6907)', '(EI4205/EI2090)', 'AUTOR']",['Hanne Van Den Bosch']
+Introducción a la Tesis I,MA7990,,,[]
+Introducción a la Tesis II,MA7991,,,[]
+Trabajo de Tesis I,MA8901,,,[]
+Trabajo de Tesis II,MA8902,,,[]
+Trabajo de Tesis III,MA8903,,,[]
+Trabajo de Tesis IV,MA8904,,,[]
+Taller de Tesis,MA8961,No tiene,['Obligatorio para el Magíster en Matemáticas Aplicadas'],[]
+Seminario de Titulación,MA8962,No tiene,['Sólo para Magíster y Doctorado'],[]
+Seminario de Titulación,MA8963,,,[]
+Introducción a la Tesis,MA799,,,[]

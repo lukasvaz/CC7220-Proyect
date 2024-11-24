@@ -64,10 +64,10 @@ for a in anchors:
         """
     )
     # Define the CSV file path
-    csv_file_path = '/home/lukas/Escritorio/Proyecto-Watos/professors_info2.csv'
+    csv_file_path = 'professors_info.csv'
 
     # Define the CSV headers
-    csv_headers = ['Nombre', 'Cargo', 'Grados', 'Departamento', 'Código']
+    csv_headers = ['Nombre', 'Cargo', 'Grados', 'Departamento']
 
     # Open the CSV file in append mode
     with open(csv_file_path, mode='a', newline='', encoding='utf-8') as file:
@@ -82,8 +82,7 @@ for a in anchors:
             'Nombre': soup_response.find('p', class_="AcademicProfile_academicTitle__no_Rn").text,
             'Cargo': soup_response.find_all('div', class_="AcademicProfile_nombramientoDetail__sTZwO")[0].text,
             'Grados': personal_info_list,
-            'Departamento': Selected[1],
-            'Código': codigo
+            'Departamento': codigo
         })
 driver.quit()
 
@@ -91,45 +90,3 @@ driver.quit()
 
 
 
-
-
-
-
-
-
-
-
-
-# Close the WebDriver
-# url = root +'/unidad/788/departamento/'+Selected[0]  
-# driver.get(url)
-# anchors=[]
-# # Wait for the page to load
-# while True:
-#     time.sleep(2)  # Adjust the sleep time as needed
-#     page_source = driver.page_source
-#     # Parse the page source with BeautifulSoup
-#     soup = BeautifulSoup(page_source, 'html.parser')
-#     divs = soup.find_all('div', class_="AcademicCard_nombre__MQcFY")
-#     new_anchors = [div.find('a').get('href') for div in divs]
-#     anchors += new_anchors 
-
-#     # Find the button element by its class name or any other attribute
-#     if len(new_anchors)<12:
-#         break
-    
-#     button = driver.find_elements(By.CLASS_NAME, "PaginationServer_chevron__bmKZ7")[-1]
-#     print(button.text)
-#     if button:
-#         # Scroll the button into view using JavaScript
-#         driver.execute_script("arguments[0].scrollIntoView(true);", button)
-#         time.sleep(5)  # Wait for the scrolling to complete
-#         # driver.execute_script("arguments[0].click();", button)
-#         button.click()
-#         time.sleep(2)  
-
-#     # button[-1].click()
-#     time.sleep(2) 
-#     break
-
-# keep = True
