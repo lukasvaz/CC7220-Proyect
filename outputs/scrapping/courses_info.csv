@@ -1,0 +1,197 @@
+Titulo,Codigo,Creditos,Requisitos,Profesores
+Herramientas Computacionales para Ingeniería y Ciencias,CC1000,3,['No tiene'],['Juan Álvarez R.']
+Introducción a la Programación,CC1002,6,['CR3'],"['Valentin Muñoz Apablaza', 'Matías Torrealba A.', 'Patricio Inostroza F.', 'Francisco J. Gutiérrez', 'Juan Álvarez R.', 'Nelson Baloian T.', 'Cristian Parra O.', 'Benjamín Bustos', 'Eduardo Godoy Vega']"
+Algoritmos y Estructuras de Datos,CC3001,6,"['(CC1001/CC1002)', 'CR90']","['Alejandro Quijada', 'Patricio Poblete', 'Nelson Baloian T.']"
+Metodologías de Diseño y Programación,CC3002,6,['CC3001/CC30A'],"['Matías Toro I.', 'Ignacio Slater M.']"
+Matemáticas Discretas para la Computación,CC3101,6,"['CC1002', 'MA1101']",['Federico Olmedo']
+Teoría de la Computación,CC3102,6,['CC3101/MA3705'],"['Andrés Abeliuk', 'Alejandro Hevia A.']"
+Bases de Datos,CC3201,6,['CC3001'],"['Matías Toro I.', 'Claudio Gutiérrez']"
+Programación de Software de Sistemas,CC3301,6,['CC3001'],"['Rodrigo Urrea', 'Luis Mateu B.', 'Alexandra Ibarra']"
+Modelación y Computación Gráfica para Ingenieros,CC3501,6,"['CC1002', 'MA2001', 'MA2601', 'FI2001']","['Nancy Hitschfeld K.', 'Iván Sipiran']"
+Taller de Programación B,CC4002,3,['No tiene'],['Andrés Abeliuk']
+Taller de Programación Competitiva B,CC4006,6,['No tiene'],['Andrés Abeliuk']
+Lenguajes de Programación,CC4101,6,['CC3102'],"['Ismael Figueroa', 'Federico Olmedo']"
+Diseño y Análisis de Algoritmos,CC4102,6,"['(MA3403/MA3402)', 'CC3001', 'CC3102']","['Gonzalo Navarro', 'Benjamín Bustos']"
+Arquitectura de Computadores,CC4301,6,"['CC3301', 'FI2002']",['Luis Mateu B.']
+Sistemas Operativos,CC4302,6,['CC3301'],"['Luis Mateu B.', 'Lucas Torrealba A.', 'Rodrigo Arenas A.']"
+Redes,CC4303,6,['CC4302'],"['Javier Bustos Jiménez', 'José M. Piquer']"
+Ingeniería de Software,CC4401,6,"['CC3002', 'CC3201']",['Jocelyn Simmonds']
+"Formulación, Evaluación y Gestión de Proyectos",CC4402,6,"['CC4401', 'CD2201', 'IN2201']","['Daniel Perovich', 'Sergio F. Ochoa D.']"
+Taller de Práctica Profesional I,CC4900,No tiene,['CC4902'],['Iván Sipiran']
+Práctica Profesional I,CC4901,7,"['(CC3002', 'CC3201', 'CC3301', 'CC4900)/AUTOR']",['Iván Sipiran']
+Desarrollo de Aplicaciones Web,CC5002,6,['CC3001/CC30A'],['José Urzúa']
+Análisis Avanzado de Algoritmos,CC5101,6,"['CC3001', '(MA3403/AUTOR)']",['Patricio Poblete']
+Lenguajes de Programación II,CC5104,6,"['((CC4101/CC41A)', '(CC3002/CC51H))/AUTOR']",['Éric Tanter']
+Programación Funcional,CC5115,,,['Federico Olmedo']
+Diseño e Implementación de Compiladores,CC5116,6,"['CC3301', 'CC4101']",['Éric Tanter']
+"Algoritmos, Redes y Equidad: Análisis de Sistemas Sociotécnicos",CC5117,6,['CC3101/MA3403'],['Andrés Abeliuk']
+Minería de Datos,CC5205,6,['CC3001'],"['Juan José Alegría F.', 'Valentin Barriere']"
+Visualización de Información,CC5208,6,['CC3201'],['Eduardo Graells Garrido']
+Recuperación de Información Multimedia,CC5213,6,['CC3001'],['Juan Manuel Barrios']
+Introducción a la Criptografía Moderna,CC5301,6,"['(CC3001/CC30A)', '(CC3102/CC30B)', '(MA3403/MA34A/MA47A/MA4701/AUTOR)']",['Alejandro Hevia A.']
+Arquitectura de Sistemas de Alta Disponibilidad,CC5304,6,"['(CC3201/CC42A)', '(CC4302/CC41B)']",['Cesar Guerrero S.']
+Taller de Redes De Datos,CC5322,3,['CC4303'],['Rodrigo Arenas A.']
+Diseño de Sistemas de Internet de las Cosas,CC5326,6,"['CC3301', 'CC4303']",['Luciano Radrigan F.']
+Sistemas embebidos y sensores,CC5328,6,['CC4302'],['Luciano Radrigan F.']
+Ingeniería de Software II,CC5401,6,"['CC4101', 'CC4401']",['Sergio F. Ochoa D.']
+Proyecto de Software,CC5402,12,"['(CC4402', 'CC5205)/(IN3301', 'CC5401', 'CC4303', 'CC4102)']","['Cecilia Bastarrica', 'Gonzalo Alarcon Usui', 'Cristian Salazar De la Fuente']"
+Taller de Diseño y Desarrollo de Videojuegos,CC5408,6,['CC1002'],['Elías Zelada']
+Taller de Videojuegos Multijugador,CC5409,6,['CC3002'],['Elías Zelada']
+Mallas Geométricas y Aplicaciones,CC5501,6,['CC3001/AUTOR'],['Benjamín Mellado']
+Arquitectura de Motores de Juegos,CC5512,6,"['CC3501', 'CC4302', 'CC4401']",['Daniel Calderón']
+Procesamiento geométrico y análisis de formas,CC5513,6,"['CC4102', 'CC3501']",['Iván Sipiran']
+Preparación y Evaluación de Proyectos TI,CC5601,6,['CC4402'],['Pablo González J.']
+Gestión Informática,CC5602,6,['CC4402'],['Macarena V. Osorio A.']
+Gestión y Gobernanza de Datos,CC5603,6,['CC4402'],['Hugo Beltran A.']
+Taller de Desarrollo Comercial,CC5609,3,['CC3002'],['Adolfo Carrasco A.']
+Ética para Ingenieros en Computación,CC5611,3,['CC3002'],['Javier Bustos Jiménez']
+Taller de Comunicación Efectiva: Caso Práctico de Lanzamiento de Producto,CC5613,3,['CC3002'],['Eduardo Godoy Vega']
+Herramientas para el Trabajo en Equipo,CC5614,3,['CC3002'],['Andrea Rodríguez Silva']
+"Taller de Transformación Digital, una Visión Empresarial",CC5618,3,['CC4401'],['Hugo Beltran A.']
+Introducción al Derecho Informático,CC5620,6,['CC4901'],"['Arantxa Ereche T.', 'J. Tomás Brancoli']"
+Informática Médica,CC5701,3,['CC3201/CC42A/AUTOR'],['Sandra De la Fuente G.']
+Taller de Práctica Profesional II,CC5900,No tiene,['Taller requisito para realizar la Práctica Profesional II'],['Iván Sipiran']
+Práctica Profesional II,CC5901,7,"['CC4901', 'CC4401', 'CC4101', 'CC5900']",['Iván Sipiran']
+Trabajo Dirigido,CC5905,6,['AUTOR'],"['Matías Toro I.', 'Felipe Bravo Marquez', 'Alejandro Hevia A.', 'Nancy Hitschfeld K.', 'Francisco J. Gutiérrez', 'Aidan Hogan', 'Sergio F. Ochoa D.']"
+Pensamiento Estadístico,CC6104,6,['CC5206/MA3403/MA3401/CC5205/EL3104/IN3141'],['Felipe Bravo Marquez']
+Deep Learning,CC6204,6,['CC5205'],['Valentin Barriere']
+Innovación y Emprendimiento,CC6603,6,['CC4401'],['Hugo Beltran A.']
+Introducción al Trabajo de Título,CC6907,6,"['CC4402', 'CR267']",['Cecilia Bastarrica']
+Introducción al Trabajo de Título,CC6908,3,"['CR267', '(EI4205S/EI2090)', 'CC5401']",['Cecilia Bastarrica']
+Trabajo de Título,CC6909,21,"['CC6908', '(EI4205/EI2090)', 'CC5402']","['Felipe Bravo Marquez', 'José M. Saavedra R.', 'Gonzalo Navarro', 'Jocelyn Simmonds', 'Luis Mateu B.', 'Nancy Hitschfeld K.', 'Andrés Abeliuk', 'Aidan Hogan', 'Sergio F. Ochoa D.', 'Andrés Muñoz Ordenes', 'Iván Sipiran', 'Francisco J. Gutiérrez', 'Benjamín Bustos', 'Javier Bustos Jiménez', 'Matías Toro I.', 'Cecilia Bastarrica', 'Sebastián Ferrada Aliaga', 'Eduardo Graells Garrido', 'Luciano Radrigan F.']"
+Trabajo de Título,CC6919,CC6907,['CC6909'],"['Benjamín Bustos', 'Cecilia Bastarrica', 'Nelson Baloian T.', 'Nancy Hitschfeld K.', 'Iván Sipiran', 'Francisco J. Gutiérrez', 'Claudio Gutiérrez', 'Éric Tanter', 'Andrés Abeliuk', 'José M. Saavedra R.', 'Aidan Hogan', 'Jocelyn Simmonds', 'Eduardo Godoy Vega']"
+Pasantía de Investigación I,CC7010,3,['No tiene'],['Gonzalo Navarro']
+Pasantía de Investigación II,CC7015,3,['No tiene'],['Gonzalo Navarro']
+Investigación Dirigida,CC7020,6,['No tiene'],['Gonzalo Navarro']
+"Introducción a Coq: Lógica, Tipos y Verificación",CC7125,6,['CC4101/(MA3705/MA4702)/AUTOR'],['Éric Tanter']
+La Web de Datos,CC7220,6,['CC3201'],['Aidan Hogan']
+Estructuras de Datos Comprimidas,CC7320,6,['CC4102/AUTOR'],['Gonzalo Navarro']
+Análisis y Uso de Algoritmos Geométricos,CC7513,CC4102/AUTOR,['Electivo Magíster y Doctorado en Computación'],['Nancy Hitschfeld K.']
+"Investigación en Ciencias de la Computación (Métodos, Técnicas, Perspectivas)",CC7910,6,['CC4102/AUTOR'],['Claudio Gutiérrez']
+Introducción a la Tesis,CC7920,18,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis I,CC7970,No tiene,['CC797'],['Nancy Hitschfeld K.']
+Trabajo de Tesis II,CC7980,No tiene,['CC798'],['Nancy Hitschfeld K.']
+Trabajo de Tesis I,CC8910,30,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis II,CC8920,30,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis III,CC8930,30,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis IV,CC8940,30,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis V,CC8950,30,['No tiene'],['Gonzalo Navarro']
+Trabajo de Tesis VI,CC8960,30,['No tiene'],['Gonzalo Navarro']
+Gestión de Proyectos de TI,CC63B,No tiene,['Curso Exclusivo del Magister Profesional'],['Sergio F. Ochoa D.']
+Negociación de Proyectos de TI,CC63C,3,['No tiene'],['Marcelo Cristián Monsalves Muñoz']
+Gestión del Conocimiento,CC63E,No tiene,"['""CURSO EXCLUSIVO DEL MAGISTER PROFESIONAL""']",['Marcelo Cristián Monsalves Muñoz']
+Liderando Transformaciones desde el Sentido,CC63Y,No tiene,['Electivo Magíster Profesional'],['Veronica Virgilio C.']
+Algoritmos Evolutivos,CC66M,,,['Alexandre Bergel']
+Inteligencia Artificial en Robótica,CC66O,,,['Rodrigo Verschae T.']
+Procesamiento de Lenguaje Natural,CC66Q,,,['Andrés Abeliuk']
+Taller de Proyecto IA,CC66R,,,['Juan Manuel Barrios']
+Machine Learning,CC66S,No tiene,['Electivo Magíster Profesional'],"['Ignacio Meza De la Jara', 'María José Zambrano Burrows', 'Felipe Bravo Marquez']"
+Reconocimiento Visual con Deep Learning,CC66T,No tiene,['Curso exclusivo del Magíster Profesional'],['José M. Saavedra R.']
+Redes Neuronales y Deep Learning,CC66U,No tiene,['Curso exclusivo del Magíster Profesional'],['Iván Sipiran']
+Avances en Bases de Datos,CC73F,No tiene,['SOLO MAGISTER PROFESIONAL'],"['Rodrigo Frez P.', 'Sergio F. Ochoa D.']"
+Taller de Gestión de Proyectos de TI,CC73J,No tiene,['Electivo del Magíster Profesional'],"['Tomas Vera', 'Sergio F. Ochoa D.']"
+Seminario de Proyectos de TI I,CC79E,6,['No tiene'],"['Benjamín Bustos', 'Sergio F. Ochoa D.']"
+Seminario de Proyectos de TI II,CC79F,6,['CC79E'],"['Benjamín Bustos', 'Sergio F. Ochoa D.']"
+Proyecto de Grado I,CC79G,21,['CC79F'],"['Benjamín Bustos', 'Sergio F. Ochoa D.']"
+Proyecto de Grado II,CC79H,21,['CC79G'],"['Benjamín Bustos', 'Sergio F. Ochoa D.']"
+Taller de Programación A,CC4001,3,['No tiene'],['Andrés Abeliuk']
+Taller de Programación Competitiva A,CC4005,6,['No tiene'],['Andrés Abeliuk']
+Procesamiento Masivo de Datos,CC5212,6,['CC3201'],['Aidan Hogan']
+Privacidad de datos,CC5215,6,"['MA3403', 'CC3201', '(CC5205/AUTOR)']","['Federico Olmedo', 'Matías Toro I.']"
+Seguridad de Datos,CC5312,6,"['(CC3201/CC42A)', '(CC4302/CC41B)']","['Alejandro Hevia A.', 'Eduardo Riveros Roca']"
+Seminario de Votación Electrónica,CC5317,,,['Alejandro Hevia A.']
+Taller de Hacking Competitivo,CC5325,6,['CC3001'],"['Sergio Leiva', 'Eduardo Riveros Roca', 'Diego Vargas J.']"
+Taller de UML,CC5404,6,['CC3002/CC51H'],['Andrés Muñoz Ordenes']
+Geometría Computacional,CC5502,6,"['CC3001', '(CC3101/AUTOR)']",['Nancy Hitschfeld K.']
+Diseño de Sistemas Interactivos,CC5510,6,['CC1002'],['Francisco J. Gutiérrez']
+Business Analytics,CC5615,3,['CC3201'],['Hugo Andrés Mora Riquelme']
+Procesamiento de Lenguaje Natural,CC6205,6,['CC3001/MA3403'],['Felipe Bravo Marquez']
+Taller de Metodologías Ágiles de Desarrollo de Software,CC6401,CC4401/CC31B,['CC62V'],['Marcel Augsburger']
+Análisis y Verificación de Programas,CC7126,6,['CC4101'],['Federico Olmedo']
+Computación en GPU,CC7515,6,"['CC3301', '(CC3501/FI3104)']",['Nancy Hitschfeld K.']
+Seminario de Actualización Tecnológica I,CC63D,No tiene,['Curso Exclusivo del Magister Profesional'],['Daniel Perovich']
+Introducción a la Ingeniería de Software,CC63G,No tiene,['Curso Exclusivo del Magister Profesional'],['Cecilia Bastarrica']
+Ingeniería de Requisitos,CC63H,No tiene,['Curso Exclusivo del Magister Profesional'],['Sergio F. Ochoa D.']
+Arquitectura de Software,CC63J,No tiene,['Curso Exclusivo del Magister Profesional'],['Daniel Perovich']
+Programación Orientada a Objetos,CC63K,No tiene,['Curso Exclusivo del Magister Profesional'],['Éric Tanter']
+Programación Estadística,CC66A,No tiene,['Curso exclusivo del Magíster Profesional'],['Francisco J. Gutiérrez']
+Visualización de Datos,CC66B,No tiene,['Curso exclusivo del Magíster Profesional'],"['Hernán Sarmiento A.', 'Eduardo Graells Garrido', 'Benjamín Bustos']"
+Recuperación de Información,CC66C,No tiene,['Curso exclusivo del Magíster Profesional'],['Sebastián Ferrada Aliaga']
+Minería de Datos,CC66E,No tiene,['Curso exclusivo del Magíster Profesional'],"['Gabriel Iturra Bocaz', 'Andrés Abeliuk']"
+Taller de Proyecto,CC66G,No tiene,['Curso exclusivo del Magíster Profesional'],"['Juan Manuel Barrios', 'Claudio Gutiérrez']"
+Aprendizaje de Máquinas y Deep Learning,CC66H,3,['No tiene'],['Iván Sipiran']
+Big Data,CC66I,3,['No tiene'],"['Alberto Moya', 'Aidan Hogan']"
+Taller de Software,CC73B,No tiene,['Curso Exclusivo del Magister Profesional'],['Juan Arriagada']
+Introducción al Cálculo,MA1001,6,['No tiene'],"['Pedro Perez Aros', 'Mauricio Telias H.', 'Jorge A. San Martín H.', 'Matias Pavez Signe', 'Cristián Reyes', 'Natalia Ruiz G.', 'Patricio Felmer A.', 'Jorge Aguayo Araneda', 'Yamit Y.', 'Juan Pablo Peña']"
+Cálculo Diferencial e Integral,MA1002,6,['(MA1001/MA100)'],"['Pedro Perez Aros', 'Rodolfo Gutiérrez Romo', 'Diana Ximena Narváez Naspirán']"
+Introducción al Álgebra,MA1101,6,['No tiene'],"['Vicente Acuña A.', 'Marcos Kiwi', 'José A. Soto S.', 'Avelio Sepúlveda', 'Flavio Guiñez A.', 'Patricio Quiroz H.', 'Pablo R. Dartnell R.', 'Alexis Fuentes P.']"
+Álgebra Lineal,MA1102,6,['(MA1101/MA110)'],"['Marcos Kiwi', 'Alejandro Maass S.', 'Natacha Astromujoff']"
+Cálculo en Varias Variables,MA2001,6,"['(MA1002/MA1A2)', '(MA1102/MA1B2)']","['Javier Ramírez Ganga', 'Jorge A. San Martín H.', 'Rafael Correa F.', 'Álvaro Hernández U.', 'Hugo Maturana C.', 'Alexander Frank M.']"
+Cálculo Avanzado y Aplicaciones,MA2002,6,"['(MA2001/MA2A1)', '(MA2601/MA2G1)']","['Juvenal Letelier', 'Javier Ramírez Ganga', 'Ricardo Carlos F.']"
+Ecuaciones Diferenciales Ordinarias,MA2601,6,"['(MA1002/MA1A2)', '(MA1102/MA1B2)']","['Francisco Ortega Culaciati', 'Michal Kowalczyk', 'Salome Martinez S.', 'Raul Manasevich T.', 'Gabrielle Nornberg', 'Axel Osses A.', 'Alexis Fuentes P.']"
+Seminario de Investigación Documental,MA3100,6,['AUTOR'],['Martín Matamala']
+Probabilidades,MA3401,6,['MA2001/MA2A1'],['Daniel Remenik']
+Probabilidades y Estadística,MA3403,6,['MA2001/MA2A1'],"['Laura Jiménez', 'Fernando Lema F.', 'Raul Gouet B.', 'Servet Martinez A.']"
+Optimización,MA3701,6,['MA2002'],['Jorge G. Amaya A.']
+Optimización Matemática,MA3711,6,['MA2002'],"['Pedro Perez Aros', 'Héctor Ramírez C.']"
+Análisis,MA3801,9,['MA2002/MA2A2'],['Hanne Van Den Bosch']
+Teoría de la Medida,MA3802,9,['MA3801'],['Sebastián Donoso F.']
+Variable Compleja y Funciones Especiales,MA4001,6,['MA2002'],['Michal Kowalczyk']
+Cálculo Diferencial Variacional,MA4002,6,['MA3801'],['Carlos Conca R.']
+Programación Competitiva,MA4205,6,['CC1002'],['Javier Marinkovic']
+Procesos de Markov,MA4401,6,"['(MA3401', 'MA3802)/AUTOR']",['Joaquin Fontbona T.']
+Programación Lineal Mixta: Teoría y Laboratorio,MA4702,6,['MA3705'],['José A. Soto S.']
+Análisis Funcional,MA4801,6,['MA3802'],['Rayssa Aires de Lima Caju']
+Taller de Práctica Profesional I,MA4900,No tiene,['MA4903'],['Hanne Van Den Bosch']
+Práctica Profesional I,MA4902,7,"['(MA3402', '(MA4900/MA4903))/AUTOR']",['Hanne Van Den Bosch']
+Geometría Diferencial y Riemmanniana,MA5112,6,['No tiene'],"['Rodolfo Gutiérrez Romo', 'Rayssa Aires de Lima Caju']"
+Divulgación en matemáticas,MA5115,,,['Alejandro Maass S.']
+Calculabilidad y Complejidad Computacional,MA5201,6,['MA4701/MA3705'],['Iván Rapaport']
+Análisis Numérico de Ecuaciones en Derivadas Parciales:Teoría y Laboratorio,MA5307,9,['MA4802'],['Axel Osses A.']
+Probabilidad y Estadística en el Análisis de Datos,MA5406,6,['MA3403/MA3401'],"['Andrew Hart', 'Servet Martinez A.']"
+Tópicos en Probabilidades,MA5408,6,['AUTOR'],['Daniel Remenik']
+Modelos de Evolución,MA5602,6,['MA5601/MA4802'],['Michal Kowalczyk']
+"Tópicos Matemáticos en Aprendizaje de Máquinas, Redes Neuronales y Aprendizaje Profundo",MA5606,6,['AUTOR'],"['Claudio Muñoz C.', 'Joaquin Fontbona T.']"
+Optimización no Lineal,MA5701,6,"['(MA3701', 'MA3801)/AUTOR']",['Alejandro Jofré C.']
+Introducción a los Sistemas Dinámicos y la Teoria Ergódica,MA5802,6,['MA4401'],"['Sebastián Donoso F.', 'Alejandro Maass S.']"
+Taller de Práctica Profesional II,MA5900,0,['No tiene'],['Hanne Van Den Bosch']
+Práctica Profesional II,MA5902,7,"['(MA4902', '(MA4402/MA4703))']",['Hanne Van Den Bosch']
+Seminarios,MA6420,"MA4230,AUTOR",['Electivo Doctorado'],"['Sebastián Donoso F.', 'Jaime Ortega P.']"
+Teoría de Grafos II,MA6505,6,['AUTOR'],['Maya Stein']
+Práctica Profesional III,MA6902,7,"['(MA5902', 'MA4703)/AUTOR']",['Hanne Van Den Bosch']
+Introducción al Trabajo de Titulo,MA6907,MA5307,['MA6908'],['Alejandro Maass S.']
+Seminario Avanzado de Matemáticas II,MA6912,6,"['MA4802', 'AUTOR']","['Claudio Muñoz C.', 'Gabrielle Nornberg']"
+Seminario Avanzado de Matemáticas II,MA6916,6,['MA3801'],"['Rafael Correa F.', 'Emilio Vilches G.']"
+Introducción a la Tesis I,MA7990,,,[]
+Introducción a la Tesis II,MA7991,,,[]
+Introducción a la Tesis,MA7992,,,['Jaime Ortega P.']
+Trabajo de Tesis I,MA8901,,,['Jaime Ortega P.']
+Taller de Tesis,MA8961,No tiene,['Obligatorio para el Magíster en Matemáticas Aplicadas'],[]
+Seminario de Titulación,MA8962,No tiene,['Sólo para Magíster y Doctorado'],[]
+Seminario de Titulación,MA8963,,,"['Alejandro Maass S.', 'Jaime Ortega P.']"
+Introducción a la Tesis,MA799,,,[]
+Trabajo de Tesis III,MA898,,,[]
+Trabajo de Tesis IV,MA899,,,[]
+Tópicos en Análisis Convexo,MA3002,6,['MA2001'],['Rafael Correa F.']
+Elementos de Álgebra,MA3101,6,['MA2001/MA2A1'],['Maya Stein']
+Estadística,MA3402,6,['MA3401/MA34A'],['Joaquin Fontbona T.']
+Algoritmos Combinatoriales,MA3705,6,['MA3711'],['José A. Soto S.']
+Introducción a la Historia de la Matemática,MA4111,6,['MA3801'],['Raúl Gormaz A.']
+Simulación Estocástica: Teoría y Laboratorio,MA4402,6,['MA4401'],['Avelio Sepúlveda']
+Control Óptimo: Teoría y Laboratorio,MA4703,9,['MA4801'],['Héctor Ramírez C.']
+Ecuaciones en Derivadas Parciales,MA4802,9,['MA4801'],"['Rayssa Aires de Lima Caju', 'Claudio Muñoz C.']"
+Problemas Inversos y de Control de EDP,MA5306,6,['MA4601/MA4802'],['Axel Osses A.']
+Cálculo Estocástico,MA5402,6,['MA4401'],['Daniel Remenik']
+Laboratorio de Modelamiento Matemático I,MA5500,6,['MA49A/MA4902/AUTOR'],"['Alejandro Maass S.', 'Jaime San Martín']"
+Teoría de Grafos,MA5505,6,['MA3705'],['Martín Matamala']
+Seminario de Recurrencia en Teoría Ergódica,MA5506,6,['MA3802/MA5802'],['Sebastián Donoso F.']
+Ecología Matemática,MA5509,6,['MA2002'],['Salome Martinez S.']
+Análisis no Lineal,MA5603,6,['MA5601/MA4802'],['Raul Manasevich T.']
+Análisis Convexo y Dualidad,MA5801,6,['MA4801/AUTOR'],['Alejandro Jofré C.']
+Computación Distribuida,MA6140,6,['MA3705/AUTOR'],['Iván Rapaport']
+Introducción al Trabajo de Título,MA6908,3,['No tiene'],['Hanne Van Den Bosch']
+Trabajo de Título,MA6909,21,"['(MA6908/MA6907)', '(EI4205S/EI2090)']",['Hanne Van Den Bosch']
+Trabajo de Memoria de Título,MA6910,21,"['(MA6908/MA6907)', '(EI4205/EI2090)', 'AUTOR']",['Hanne Van Den Bosch']
+Trabajo de Tesis II,MA8902,,,[]
+Trabajo de Tesis III,MA8903,,,[]
+Trabajo de Tesis IV,MA8904,,,[]
