@@ -2,7 +2,7 @@ import csv
 import ast
 
 def process_string(s):
-    return s.replace('.', '').replace('-', '').replace('  ','_').replace(' ', '_').replace('""','"')
+    return s.replace('.', '').replace('-', '').replace('/a','').replace('  ','_').replace(' ', '_').replace('""','"')
 
 input_file = 'profesores_formateados.csv'
 output_file = 'professor_formating_processed.csv'
