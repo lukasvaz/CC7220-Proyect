@@ -1,197 +1,142 @@
-Titulo,Codigo,Creditos,Requisitos,Profesores
-Herramientas Computacionales para Ingeniería y Ciencias,CC1000,3,,['Juan_Álvarez']
-Introducción a la Programación,CC1002,6,['CR3'],"['Valentin_Muñoz, Matías_Torrealba, Patricio_Inostroza, Francisco_Gutiérrez, Juan_Álvarez, Nelson_Baloian, Cristian_Parra, Benjamín_Bustos, Eduardo_Godoy']"
-Algoritmos y Estructuras de Datos,CC3001,6,"['CC1001', 'CC1002', 'CR90']","['Alejandro_Quijada, Patricio_Poblete, Nelson_Baloian']"
-Metodologías de Diseño y Programación,CC3002,6,"['CC3001', 'CC30A']","['Matías_Toro, Ignacio_Slater']"
-Matemáticas Discretas para la Computación,CC3101,6,"['CC1002', 'MA1101']",['Federico_Olmedo']
-Teoría de la Computación,CC3102,6,"['CC3101', 'MA3705']","['Andrés_Abeliuk, Alejandro_Hevia']"
-Bases de Datos,CC3201,6,['CC3001'],"['Matías_Toro, Claudio_Gutiérrez']"
-Programación de Software de Sistemas,CC3301,6,['CC3001'],"['Rodrigo_Urrea, Luis_Mateu, Alexandra_Ibarra']"
-Modelación y Computación Gráfica para Ingenieros,CC3501,6,"['CC1002', 'MA2001', 'MA2601', 'FI2001']","['Nancy_Hitschfeld, Iván_Sipiran']"
-Taller de Programación B,CC4002,3,,['Andrés_Abeliuk']
-Taller de Programación Competitiva B,CC4006,6,,['Andrés_Abeliuk']
-Lenguajes de Programación,CC4101,6,['CC3102'],"['Ismael_Figueroa, Federico_Olmedo']"
-Diseño y Análisis de Algoritmos,CC4102,6,"['MA3403', 'MA3402', 'CC3001', 'CC3102']","['Gonzalo_Navarro, Benjamín_Bustos']"
-Arquitectura de Computadores,CC4301,6,"['CC3301', 'FI2002']",['Luis_Mateu']
-Sistemas Operativos,CC4302,6,['CC3301'],"['Luis_Mateu, Lucas_Torrealba, Rodrigo_Arenas']"
-Redes,CC4303,6,['CC4302'],"['Javier_Bustos, José_Piquer']"
-Ingeniería de Software,CC4401,6,"['CC3002', 'CC3201']",['Jocelyn_Simmonds']
-"Formulación, Evaluación y Gestión de Proyectos",CC4402,6,"['CC4401', 'CD2201', 'IN2201']","['Daniel_Perovich, Sergio_Ochoa']"
-Taller de Práctica Profesional I,CC4900,,['CC4902'],['Iván_Sipiran']
-Práctica Profesional I,CC4901,7,"['CC3002', 'CC3201', 'CC3301', 'CC4900', 'AUTOR']",['Iván_Sipiran']
-Desarrollo de Aplicaciones Web,CC5002,6,"['CC3001', 'CC30A']",['José_Urzúa']
-Análisis Avanzado de Algoritmos,CC5101,6,"['CC3001', 'MA3403', 'AUTOR']",['Patricio_Poblete']
-Lenguajes de Programación II,CC5104,6,"['CC4101', 'CC41A', 'CC3002', 'CC51H', 'AUTOR']",['Éric_Tanter']
-Programación Funcional,CC5115,,,['Federico_Olmedo']
-Diseño e Implementación de Compiladores,CC5116,6,"['CC3301', 'CC4101']",['Éric_Tanter']
-"Algoritmos, Redes y Equidad: Análisis de Sistemas Sociotécnicos",CC5117,6,"['CC3101', 'MA3403']",['Andrés_Abeliuk']
-Minería de Datos,CC5205,6,['CC3001'],"['Juan_José, Valentin_Barriere']"
-Visualización de Información,CC5208,6,['CC3201'],['Eduardo_Graells']
-Recuperación de Información Multimedia,CC5213,6,['CC3001'],['Juan_Manuel']
-Introducción a la Criptografía Moderna,CC5301,6,"['CC3001', 'CC30A', 'CC3102', 'CC30B', 'MA3403', 'MA34A', 'MA47A', 'MA4701', 'AUTOR']",['Alejandro_Hevia']
-Arquitectura de Sistemas de Alta Disponibilidad,CC5304,6,"['CC3201', 'CC42A', 'CC4302', 'CC41B']",['Cesar_Guerrero']
-Taller de Redes De Datos,CC5322,3,['CC4303'],['Rodrigo_Arenas']
-Diseño de Sistemas de Internet de las Cosas,CC5326,6,"['CC3301', 'CC4303']",['Luciano_Radrigan']
-Sistemas embebidos y sensores,CC5328,6,['CC4302'],['Luciano_Radrigan']
-Ingeniería de Software II,CC5401,6,"['CC4101', 'CC4401']",['Sergio_Ochoa']
-Proyecto de Software,CC5402,12,"['CC4402', 'CC5205', 'IN3301', 'CC5401', 'CC4303', 'CC4102']","['Cecilia_Bastarrica, Gonzalo_Alarcon, Cristian_Salazar']"
-Taller de Diseño y Desarrollo de Videojuegos,CC5408,6,['CC1002'],['Elías_Zelada']
-Taller de Videojuegos Multijugador,CC5409,6,['CC3002'],['Elías_Zelada']
-Mallas Geométricas y Aplicaciones,CC5501,6,"['CC3001', 'AUTOR']",['Benjamín_Mellado']
-Arquitectura de Motores de Juegos,CC5512,6,"['CC3501', 'CC4302', 'CC4401']",['Daniel_Calderón']
-Procesamiento geométrico y análisis de formas,CC5513,6,"['CC4102', 'CC3501']",['Iván_Sipiran']
-Preparación y Evaluación de Proyectos TI,CC5601,6,['CC4402'],['Pablo_González']
-Gestión Informática,CC5602,6,['CC4402'],['Macarena_Osorio']
-Gestión y Gobernanza de Datos,CC5603,6,['CC4402'],['Hugo_Beltran']
-Taller de Desarrollo Comercial,CC5609,3,['CC3002'],['Adolfo_Carrasco']
-Ética para Ingenieros en Computación,CC5611,3,['CC3002'],['Javier_Bustos']
-Taller de Comunicación Efectiva: Caso Práctico de Lanzamiento de Producto,CC5613,3,['CC3002'],['Eduardo_Godoy']
-Herramientas para el Trabajo en Equipo,CC5614,3,['CC3002'],['Andrea_Rodríguez']
-"Taller de Transformación Digital, una Visión Empresarial",CC5618,3,['CC4401'],['Hugo_Beltran']
-Introducción al Derecho Informático,CC5620,6,['CC4901'],"['Arantxa_Ereche, Tomás_Brancoli']"
-Informática Médica,CC5701,3,"['CC3201', 'CC42A', 'AUTOR']",['Sandra_Fuente']
-Taller de Práctica Profesional II,CC5900,,['Taller_requisito_para_realizar_la_Práctica_Profesional_II'],['Iván_Sipiran']
-Práctica Profesional II,CC5901,7,"['CC4901', 'CC4401', 'CC4101', 'CC5900']",['Iván_Sipiran']
-Trabajo Dirigido,CC5905,6,['AUTOR'],"['Matías_Toro, Felipe_Bravo, Alejandro_Hevia, Nancy_Hitschfeld, Francisco_Gutiérrez, Aidan_Hogan, Sergio_Ochoa']"
-Pensamiento Estadístico,CC6104,6,"['CC5206', 'MA3403', 'MA3401', 'CC5205', 'EL3104', 'IN3141']",['Felipe_Bravo']
-Deep Learning,CC6204,6,['CC5205'],['Valentin_Barriere']
-Innovación y Emprendimiento,CC6603,6,['CC4401'],['Hugo_Beltran']
-Introducción al Trabajo de Título,CC6907,6,"['CC4402', 'CR267']",['Cecilia_Bastarrica']
-Introducción al Trabajo de Título,CC6908,3,"['CR267', 'EI4205S', 'EI2090', 'CC5401']",['Cecilia_Bastarrica']
-Trabajo de Título,CC6909,21,"['CC6908', 'EI4205', 'EI2090', 'CC5402']","['Felipe_Bravo, José_Saavedra, Gonzalo_Navarro, Jocelyn_Simmonds, Luis_Mateu, Nancy_Hitschfeld, Andrés_Abeliuk, Aidan_Hogan, Sergio_Ochoa, Andrés_Muñoz, Iván_Sipiran, Francisco_Gutiérrez, Benjamín_Bustos, Javier_Bustos, Matías_Toro, Cecilia_Bastarrica, Sebastián_Ferrada, Eduardo_Graells, Luciano_Radrigan']"
-Trabajo de Título,CC6919,CC6907,['CC6909'],"['Benjamín_Bustos, Cecilia_Bastarrica, Nelson_Baloian, Nancy_Hitschfeld, Iván_Sipiran, Francisco_Gutiérrez, Claudio_Gutiérrez, Éric_Tanter, Andrés_Abeliuk, José_Saavedra, Aidan_Hogan, Jocelyn_Simmonds, Eduardo_Godoy']"
-Pasantía de Investigación I,CC7010,3,,['Gonzalo_Navarro']
-Pasantía de Investigación II,CC7015,3,,['Gonzalo_Navarro']
-Investigación Dirigida,CC7020,6,,['Gonzalo_Navarro']
-"Introducción a Coq: Lógica, Tipos y Verificación",CC7125,6,"['CC4101', 'MA3705', 'MA4702', 'AUTOR']",['Éric_Tanter']
-La Web de Datos,CC7220,6,['CC3201'],['Aidan_Hogan']
-Estructuras de Datos Comprimidas,CC7320,6,"['CC4102', 'AUTOR']",['Gonzalo_Navarro']
-Análisis y Uso de Algoritmos Geométricos,CC7513,CC4102/AUTOR,['Electivo_Magíster_y_Doctorado_en_Computación'],['Nancy_Hitschfeld']
-"Investigación en Ciencias de la Computación (Métodos, Técnicas, Perspectivas)",CC7910,6,"['CC4102', 'AUTOR']",['Claudio_Gutiérrez']
-Introducción a la Tesis,CC7920,18,,['Gonzalo_Navarro']
-Trabajo de Tesis I,CC7970,,['CC797'],['Nancy_Hitschfeld']
-Trabajo de Tesis II,CC7980,,['CC798'],['Nancy_Hitschfeld']
-Trabajo de Tesis I,CC8910,30,,['Gonzalo_Navarro']
-Trabajo de Tesis II,CC8920,30,,['Gonzalo_Navarro']
-Trabajo de Tesis III,CC8930,30,,['Gonzalo_Navarro']
-Trabajo de Tesis IV,CC8940,30,,['Gonzalo_Navarro']
-Trabajo de Tesis V,CC8950,30,,['Gonzalo_Navarro']
-Trabajo de Tesis VI,CC8960,30,,['Gonzalo_Navarro']
-Gestión de Proyectos de TI,CC63B,,['Curso_Exclusivo_del_Magister_Profesional'],['Sergio_Ochoa']
-Negociación de Proyectos de TI,CC63C,3,,['Marcelo_Cristián']
-Gestión del Conocimiento,CC63E,,"['""CURSO_EXCLUSIVO_DEL_MAGISTER_PROFESIONAL""']",['Marcelo_Cristián']
-Liderando Transformaciones desde el Sentido,CC63Y,,['Electivo_Magíster_Profesional'],['Veronica_Virgilio']
-Algoritmos Evolutivos,CC66M,,,['Alexandre_Bergel']
-Inteligencia Artificial en Robótica,CC66O,,,['Rodrigo_Verschae']
-Procesamiento de Lenguaje Natural,CC66Q,,,['Andrés_Abeliuk']
-Taller de Proyecto IA,CC66R,,,['Juan_Manuel']
-Machine Learning,CC66S,,['Electivo_Magíster_Profesional'],"['Ignacio_Meza, María_José, Felipe_Bravo']"
-Reconocimiento Visual con Deep Learning,CC66T,,['Curso_exclusivo_del_Magíster_Profesional'],['José_Saavedra']
-Redes Neuronales y Deep Learning,CC66U,,['Curso_exclusivo_del_Magíster_Profesional'],['Iván_Sipiran']
-Avances en Bases de Datos,CC73F,,['SOLO_MAGISTER_PROFESIONAL'],"['Rodrigo_Frez, Sergio_Ochoa']"
-Taller de Gestión de Proyectos de TI,CC73J,,['Electivo_del_Magíster_Profesional'],"['Tomas_Vera, Sergio_Ochoa']"
-Seminario de Proyectos de TI I,CC79E,6,,"['Benjamín_Bustos, Sergio_Ochoa']"
-Seminario de Proyectos de TI II,CC79F,6,['CC79E'],"['Benjamín_Bustos, Sergio_Ochoa']"
-Proyecto de Grado I,CC79G,21,['CC79F'],"['Benjamín_Bustos, Sergio_Ochoa']"
-Proyecto de Grado II,CC79H,21,['CC79G'],"['Benjamín_Bustos, Sergio_Ochoa']"
-Taller de Programación A,CC4001,3,,['Andrés_Abeliuk']
-Taller de Programación Competitiva A,CC4005,6,,['Andrés_Abeliuk']
-Procesamiento Masivo de Datos,CC5212,6,['CC3201'],['Aidan_Hogan']
-Privacidad de datos,CC5215,6,"['MA3403', 'CC3201', 'CC5205', 'AUTOR']","['Federico_Olmedo, Matías_Toro']"
-Seguridad de Datos,CC5312,6,"['CC3201', 'CC42A', 'CC4302', 'CC41B']","['Alejandro_Hevia, Eduardo_Riveros']"
-Seminario de Votación Electrónica,CC5317,,,['Alejandro_Hevia']
-Taller de Hacking Competitivo,CC5325,6,['CC3001'],"['Sergio_Leiva, Eduardo_Riveros, Diego_Vargas']"
-Taller de UML,CC5404,6,"['CC3002', 'CC51H']",['Andrés_Muñoz']
-Geometría Computacional,CC5502,6,"['CC3001', 'CC3101', 'AUTOR']",['Nancy_Hitschfeld']
-Diseño de Sistemas Interactivos,CC5510,6,['CC1002'],['Francisco_Gutiérrez']
-Business Analytics,CC5615,3,['CC3201'],['Hugo_Andrés']
-Procesamiento de Lenguaje Natural,CC6205,6,"['CC3001', 'MA3403']",['Felipe_Bravo']
-Taller de Metodologías Ágiles de Desarrollo de Software,CC6401,CC4401/CC31B,['CC62V'],['Marcel_Augsburger']
-Análisis y Verificación de Programas,CC7126,6,['CC4101'],['Federico_Olmedo']
-Computación en GPU,CC7515,6,"['CC3301', 'CC3501', 'FI3104']",['Nancy_Hitschfeld']
-Seminario de Actualización Tecnológica I,CC63D,,['Curso_Exclusivo_del_Magister_Profesional'],['Daniel_Perovich']
-Introducción a la Ingeniería de Software,CC63G,,['Curso_Exclusivo_del_Magister_Profesional'],['Cecilia_Bastarrica']
-Ingeniería de Requisitos,CC63H,,['Curso_Exclusivo_del_Magister_Profesional'],['Sergio_Ochoa']
-Arquitectura de Software,CC63J,,['Curso_Exclusivo_del_Magister_Profesional'],['Daniel_Perovich']
-Programación Orientada a Objetos,CC63K,,['Curso_Exclusivo_del_Magister_Profesional'],['Éric_Tanter']
-Programación Estadística,CC66A,,['Curso_exclusivo_del_Magíster_Profesional'],['Francisco_Gutiérrez']
-Visualización de Datos,CC66B,,['Curso_exclusivo_del_Magíster_Profesional'],"['Hernán_Sarmiento, Eduardo_Graells, Benjamín_Bustos']"
-Recuperación de Información,CC66C,,['Curso_exclusivo_del_Magíster_Profesional'],['Sebastián_Ferrada']
-Minería de Datos,CC66E,,['Curso_exclusivo_del_Magíster_Profesional'],"['Gabriel_Iturra, Andrés_Abeliuk']"
-Taller de Proyecto,CC66G,,['Curso_exclusivo_del_Magíster_Profesional'],"['Juan_Manuel, Claudio_Gutiérrez']"
-Aprendizaje de Máquinas y Deep Learning,CC66H,3,,['Iván_Sipiran']
-Big Data,CC66I,3,,"['Alberto_Moya, Aidan_Hogan']"
-Taller de Software,CC73B,,['Curso_Exclusivo_del_Magister_Profesional'],['Juan_Arriagada']
-Introducción al Cálculo,MA1001,6,,"['Pedro_Perez, Mauricio_Telias, Jorge_San, Matias_Pavez, Cristián_Reyes, Natalia_Ruiz, Patricio_Felmer, Jorge_Aguayo, Juan_Pablo']"
-Cálculo Diferencial e Integral,MA1002,6,"['MA1001', 'MA100']","['Pedro_Perez, Rodolfo_Gutiérrez, Diana_Ximena']"
-Introducción al Álgebra,MA1101,6,,"['Vicente_Acuña, Marcos_Kiwi, José_Soto, Avelio_Sepúlveda, Flavio_Guiñez, Patricio_Quiroz, Pablo_Dartnell, Alexis_Fuentes']"
-Álgebra Lineal,MA1102,6,"['MA1101', 'MA110']","['Marcos_Kiwi, Alejandro_Maass, Natacha_Astromujoff']"
-Cálculo en Varias Variables,MA2001,6,"['MA1002', 'MA1A2', 'MA1102', 'MA1B2']","['Javier_Ramírez, Jorge_San, Rafael_Correa, Álvaro_Hernández, Hugo_Maturana, Alexander_Frank']"
-Cálculo Avanzado y Aplicaciones,MA2002,6,"['MA2001', 'MA2A1', 'MA2601', 'MA2G1']","['Juvenal_Letelier, Javier_Ramírez, Ricardo_Carlos']"
-Ecuaciones Diferenciales Ordinarias,MA2601,6,"['MA1002', 'MA1A2', 'MA1102', 'MA1B2']","['Francisco_Ortega, Michal_Kowalczyk, Salome_Martinez, Raul_Manasevich, Gabrielle_Nornberg, Axel_Osses, Alexis_Fuentes']"
-Seminario de Investigación Documental,MA3100,6,['AUTOR'],['Martín_Matamala']
-Probabilidades,MA3401,6,"['MA2001', 'MA2A1']",['Daniel_Remenik']
-Probabilidades y Estadística,MA3403,6,"['MA2001', 'MA2A1']","['Laura_Jiménez, Fernando_Lema, Raul_Gouet, Servet_Martinez']"
-Optimización,MA3701,6,['MA2002'],['Jorge_Amaya']
-Optimización Matemática,MA3711,6,['MA2002'],"['Pedro_Perez, Héctor_Ramírez']"
-Análisis,MA3801,9,"['MA2002', 'MA2A2']",['Hanne_Van']
-Teoría de la Medida,MA3802,9,['MA3801'],['Sebastián_Donoso']
-Variable Compleja y Funciones Especiales,MA4001,6,['MA2002'],['Michal_Kowalczyk']
-Cálculo Diferencial Variacional,MA4002,6,['MA3801'],['Carlos_Conca']
-Programación Competitiva,MA4205,6,['CC1002'],['Javier_Marinkovic']
-Procesos de Markov,MA4401,6,"['MA3401', 'MA3802', 'AUTOR']",['Joaquin_Fontbona']
-Programación Lineal Mixta: Teoría y Laboratorio,MA4702,6,['MA3705'],['José_Soto']
-Análisis Funcional,MA4801,6,['MA3802'],['Rayssa_Aires']
-Taller de Práctica Profesional I,MA4900,,['MA4903'],['Hanne_Van']
-Práctica Profesional I,MA4902,7,"['MA3402', 'MA4900', 'MA4903', 'AUTOR']",['Hanne_Van']
-Geometría Diferencial y Riemmanniana,MA5112,6,,"['Rodolfo_Gutiérrez, Rayssa_Aires']"
-Divulgación en matemáticas,MA5115,,,['Alejandro_Maass']
-Calculabilidad y Complejidad Computacional,MA5201,6,"['MA4701', 'MA3705']",['Iván_Rapaport']
-Análisis Numérico de Ecuaciones en Derivadas Parciales:Teoría y Laboratorio,MA5307,9,['MA4802'],['Axel_Osses']
-Probabilidad y Estadística en el Análisis de Datos,MA5406,6,"['MA3403', 'MA3401']","['Andrew_Hart, Servet_Martinez']"
-Tópicos en Probabilidades,MA5408,6,['AUTOR'],['Daniel_Remenik']
-Modelos de Evolución,MA5602,6,"['MA5601', 'MA4802']",['Michal_Kowalczyk']
-"Tópicos Matemáticos en Aprendizaje de Máquinas, Redes Neuronales y Aprendizaje Profundo",MA5606,6,['AUTOR'],"['Claudio_Muñoz, Joaquin_Fontbona']"
-Optimización no Lineal,MA5701,6,"['MA3701', 'MA3801', 'AUTOR']",['Alejandro_Jofré']
-Introducción a los Sistemas Dinámicos y la Teoria Ergódica,MA5802,6,['MA4401'],"['Sebastián_Donoso, Alejandro_Maass']"
-Taller de Práctica Profesional II,MA5900,0,,['Hanne_Van']
-Práctica Profesional II,MA5902,7,"['MA4902', 'MA4402', 'MA4703']",['Hanne_Van']
-Seminarios,MA6420,"MA4230,AUTOR",['Electivo_Doctorado'],"['Sebastián_Donoso, Jaime_Ortega']"
-Teoría de Grafos II,MA6505,6,['AUTOR'],['Maya_Stein']
-Práctica Profesional III,MA6902,7,"['MA5902', 'MA4703', 'AUTOR']",['Hanne_Van']
-Introducción al Trabajo de Titulo,MA6907,MA5307,['MA6908'],['Alejandro_Maass']
-Seminario Avanzado de Matemáticas II,MA6912,6,"['MA4802', 'AUTOR']","['Claudio_Muñoz, Gabrielle_Nornberg']"
-Seminario Avanzado de Matemáticas II,MA6916,6,['MA3801'],"['Rafael_Correa, Emilio_Vilches']"
-Introducción a la Tesis I,MA7990,,,
-Introducción a la Tesis II,MA7991,,,
-Introducción a la Tesis,MA7992,,,['Jaime_Ortega']
-Trabajo de Tesis I,MA8901,,,['Jaime_Ortega']
-Taller de Tesis,MA8961,,['Obligatorio_para_el_Magíster_en_Matemáticas_Aplicadas'],
-Seminario de Titulación,MA8962,,['Sólo_para_Magíster_y_Doctorado'],
-Seminario de Titulación,MA8963,,,"['Alejandro_Maass, Jaime_Ortega']"
-Introducción a la Tesis,MA799,,,
-Trabajo de Tesis III,MA898,,,
-Trabajo de Tesis IV,MA899,,,
-Tópicos en Análisis Convexo,MA3002,6,['MA2001'],['Rafael_Correa']
-Elementos de Álgebra,MA3101,6,"['MA2001', 'MA2A1']",['Maya_Stein']
-Estadística,MA3402,6,"['MA3401', 'MA34A']",['Joaquin_Fontbona']
-Algoritmos Combinatoriales,MA3705,6,['MA3711'],['José_Soto']
-Introducción a la Historia de la Matemática,MA4111,6,['MA3801'],['Raúl_Gormaz']
-Simulación Estocástica: Teoría y Laboratorio,MA4402,6,['MA4401'],['Avelio_Sepúlveda']
-Control Óptimo: Teoría y Laboratorio,MA4703,9,['MA4801'],['Héctor_Ramírez']
-Ecuaciones en Derivadas Parciales,MA4802,9,['MA4801'],"['Rayssa_Aires, Claudio_Muñoz']"
-Problemas Inversos y de Control de EDP,MA5306,6,"['MA4601', 'MA4802']",['Axel_Osses']
-Cálculo Estocástico,MA5402,6,['MA4401'],['Daniel_Remenik']
-Laboratorio de Modelamiento Matemático I,MA5500,6,"['MA49A', 'MA4902', 'AUTOR']","['Alejandro_Maass, Jaime_San']"
-Teoría de Grafos,MA5505,6,['MA3705'],['Martín_Matamala']
-Seminario de Recurrencia en Teoría Ergódica,MA5506,6,"['MA3802', 'MA5802']",['Sebastián_Donoso']
-Ecología Matemática,MA5509,6,['MA2002'],['Salome_Martinez']
-Análisis no Lineal,MA5603,6,"['MA5601', 'MA4802']",['Raul_Manasevich']
-Análisis Convexo y Dualidad,MA5801,6,"['MA4801', 'AUTOR']",['Alejandro_Jofré']
-Computación Distribuida,MA6140,6,"['MA3705', 'AUTOR']",['Iván_Rapaport']
-Introducción al Trabajo de Título,MA6908,3,,['Hanne_Van']
-Trabajo de Título,MA6909,21,"['MA6908', 'MA6907', 'EI4205S', 'EI2090']",['Hanne_Van']
-Trabajo de Memoria de Título,MA6910,21,"['MA6908', 'MA6907', 'EI4205', 'EI2090', 'AUTOR']",['Hanne_Van']
-Trabajo de Tesis II,MA8902,,,
-Trabajo de Tesis III,MA8903,,,
-Trabajo de Tesis IV,MA8904,,,
+Titulo,Codigo,Creditos,Requisitos,Profesores,Departamento
+Introducción al Cálculo,MA1001,6,,"['Patricio_Quiroz, Jessica_Trespalacios, Gabrielle_Nornberg, Javier_Ramírez']",DIM
+Cálculo Diferencial e Integral,MA1002,6,"['MA1001', 'MA100']","['Leonardo_Sánchez, Javier_Ramírez, Pedro_Perez, Cristián_Reyes, Patricio_Felmer, Jorge_San, Rodolfo_Gutiérrez']",DIM
+Introducción al Álgebra,MA1101,6,,"['Iván_Rapaport, Maya_Stein, Flavio_Guiñez']",DIM
+Álgebra Lineal,MA1102,6,"['MA1101', 'MA110']","['Vicente_Acuña, Jaime_San, Marcos_Kiwi, Martín_Matamala, Pablo_Dartnell, Mauricio_Telias, Natacha_Astromujoff, Melanie_Sánchez, Alejandro_Maass']",DIM
+Cálculo en Varias Variables,MA2001,6,"['MA1002', 'MA1A2', 'MA1102', 'MA1B2']","['Patricio_Quiroz, Alexis_Fuentes, Javier_Ramírez']",DIM
+Cálculo Avanzado y Aplicaciones,MA2002,6,"['MA2001', 'MA2A1', 'MA2601', 'MA2G1']","['Jaime_Ortega, Pablo_Araya, Avelio_Sepúlveda, Carlos_Conca, Ricardo_Carlos, Jorge_San']",DIM
+Ecuaciones Diferenciales Ordinarias,MA2601,6,"['MA1002', 'MA1A2', 'MA1102', 'MA1B2']","['Jessica_Trespalacios, Gabrielle_Nornberg']",DIM
+Tópicos en Análisis Convexo,MA3002,6,['MA2001'],['Rafael_Correa'],DIM
+Elementos de Álgebra,MA3101,6,"['MA2001', 'MA2A1']",['Maya_Stein'],DIM
+Estadística,MA3402,6,"['MA3401', 'MA34A']",['Joaquin_Fontbona'],DIM
+Probabilidades y Estadística,MA3403,6,"['MA2001', 'MA2A1']","['Raul_Gouet, Servet_Martinez, Fernando_Lema']",DIM
+Optimización,MA3701,6,['MA2002'],['Jorge_Amaya'],DIM
+Algoritmos Combinatoriales,MA3705,6,['MA3711'],['José_Soto'],DIM
+Análisis,MA3801,9,"['MA2002', 'MA2A2']",['Hanne_Van'],DIM
+Teoría de la Medida,MA3802,9,['MA3801'],['Jaime_San'],DIM
+Introducción a la Historia de la Matemática,MA4111,6,['MA3801'],['Raúl_Gormaz'],DIM
+Simulación Estocástica: Teoría y Laboratorio,MA4402,6,['MA4401'],['Avelio_Sepúlveda'],DIM
+Control Óptimo: Teoría y Laboratorio,MA4703,9,['MA4801'],['Héctor_Ramírez'],DIM
+Análisis Funcional,MA4801,6,['MA3802'],['Salome_Martinez'],DIM
+Ecuaciones en Derivadas Parciales,MA4802,9,['MA4801'],"['Rayssa_Aires, Claudio_Muñoz']",DIM
+Práctica Profesional I,MA4902,7,"['MA3402', 'AUTOR']",['Hanne_Van'],DIM
+Problemas Inversos y de Control de EDP,MA5306,6,"['MA4601', 'MA4802']",['Axel_Osses'],DIM
+Cálculo Estocástico,MA5402,6,['MA4401'],['Daniel_Remenik'],DIM
+Laboratorio de Modelamiento Matemático I,MA5500,6,"['MA49A', 'MA4902', 'AUTOR']","['Jaime_San, Alejandro_Maass']",DIM
+Teoría de Grafos,MA5505,6,['MA3705'],['Martín_Matamala'],DIM
+Seminario de Recurrencia en Teoría Ergódica,MA5506,6,"['MA3802', 'MA5802']",['Sebastián_Donoso'],DIM
+Ecología Matemática,MA5509,6,['MA2002'],['Salome_Martinez'],DIM
+Análisis no Lineal,MA5603,6,"['MA5601', 'MA4802']",['Raul_Manasevich'],DIM
+Análisis Convexo y Dualidad,MA5801,6,"['MA4801', 'AUTOR']",['Alejandro_Jofré'],DIM
+Práctica Profesional II,MA5902,7,"['MA4902', 'MA4402', 'MA4703']",['Hanne_Van'],DIM
+Computación Distribuida,MA6140,6,"['MA3705', 'AUTOR']",['Iván_Rapaport'],DIM
+Seminarios,MA6420,"MA4230,AUTOR",['Electivo_Doctorado'],['Daniel_Remenik'],DIM
+Práctica Profesional III,MA6902,7,"['MA5902', 'MA4703', 'AUTOR']",['Hanne_Van'],DIM
+Introducción al Trabajo de Título,MA6908,3,,['Hanne_Van'],DIM
+Trabajo de Título,MA6909,21,"['MA6908', 'MA6907', 'EI4205S', 'EI2090']",['Hanne_Van'],DIM
+Trabajo de Memoria de Título,MA6910,21,"['MA6908', 'MA6907', 'EI4205', 'EI2090', 'AUTOR']",['Hanne_Van'],DIM
+Introducción a la Tesis I,MA7990,,,,DIM
+Introducción a la Tesis II,MA7991,,,,DIM
+Trabajo de Tesis I,MA8901,,,,DIM
+Trabajo de Tesis II,MA8902,,,,DIM
+Trabajo de Tesis III,MA8903,,,,DIM
+Trabajo de Tesis IV,MA8904,,,,DIM
+Taller de Tesis,MA8961,,['Obligatorio_para_el_Magíster_en_Matemáticas_Aplicadas'],,DIM
+Seminario de Titulación,MA8962,,['Sólo_para_Magíster_y_Doctorado'],,DIM
+Seminario de Titulación,MA8963,,,,DIM
+Introducción a la Tesis,MA799,,,,DIM
+Herramientas Computacionales para Ingeniería y Ciencias,CC1000,3,,['Juan_Álvarez'],DCC
+Introducción a la Programación,CC1002,6,['CR3'],"['Valentin_Muñoz, Francisco_Gutiérrez, Benjamín_Bustos, Cristian_Parra, Matías_Torrealba, Eduardo_Godoy, Nelson_Baloian, Patricio_Inostroza, Juan_Álvarez']",DCC
+Algoritmos y Estructuras de Datos,CC3001,6,"['CC1001', 'CC1002', 'CR90']","['Patricio_Poblete, Nelson_Baloian, Alejandro_Quijada']",DCC
+Metodologías de Diseño y Programación,CC3002,6,"['CC3001', 'CC30A']","['Ignacio_Slater, Matías_Toro']",DCC
+Matemáticas Discretas para la Computación,CC3101,6,"['CC1002', 'MA1101']",['Federico_Olmedo'],DCC
+Teoría de la Computación,CC3102,6,"['CC3101', 'MA3705']","['Andrés_Abeliuk, Alejandro_Hevia']",DCC
+Bases de Datos,CC3201,6,['CC3001'],"['Claudio_Gutiérrez, Matías_Toro']",DCC
+Programación de Software de Sistemas,CC3301,6,['CC3001'],"['Rodrigo_Urrea, Luis_Mateu, Alexandra_Ibarra']",DCC
+Modelación y Computación Gráfica para Ingenieros,CC3501,6,"['CC1002', 'MA2001', 'MA2601', 'FI2001']","['Nancy_Hitschfeld, Iván_Sipiran']",DCC
+Taller de Programación B,CC4002,3,,['Andrés_Abeliuk'],DCC
+Taller de Programación Competitiva B,CC4006,6,,['Andrés_Abeliuk'],DCC
+Lenguajes de Programación,CC4101,6,['CC3102'],"['Ismael_Figueroa, Federico_Olmedo']",DCC
+Diseño y Análisis de Algoritmos,CC4102,6,"['MA3403', 'MA3402', 'CC3001', 'CC3102']","['Gonzalo_Navarro, Benjamín_Bustos']",DCC
+Arquitectura de Computadores,CC4301,6,"['CC3301', 'FI2002']",['Luis_Mateu'],DCC
+Sistemas Operativos,CC4302,6,['CC3301'],"['Rodrigo_Arenas, Luis_Mateu, Lucas_Torrealba']",DCC
+Redes,CC4303,6,['CC4302'],"['Javier_Bustos, José_Piquer']",DCC
+Ingeniería de Software,CC4401,6,"['CC3002', 'CC3201']",['Jocelyn_Simmonds'],DCC
+"Formulación, Evaluación y Gestión de Proyectos",CC4402,6,"['CC4401', 'CD2201', 'IN2201']","['Sergio_Ochoa, Daniel_Perovich']",DCC
+Taller de Práctica Profesional I,CC4900,,['CC4902'],['Iván_Sipiran'],DCC
+Práctica Profesional I,CC4901,7,"['CC3002', 'CC3201', 'CC3301', 'CC4900', 'AUTOR']",['Iván_Sipiran'],DCC
+Desarrollo de Aplicaciones Web,CC5002,6,"['CC3001', 'CC30A']",['José_Urzúa'],DCC
+Análisis Avanzado de Algoritmos,CC5101,6,"['CC3001', 'MA3403', 'AUTOR']",['Patricio_Poblete'],DCC
+Lenguajes de Programación II,CC5104,6,"['CC4101', 'CC41A', 'CC3002', 'CC51H', 'AUTOR']",['Éric_Tanter'],DCC
+Programación Funcional,CC5115,,,['Federico_Olmedo'],DCC
+Diseño e Implementación de Compiladores,CC5116,6,"['CC3301', 'CC4101']",['Éric_Tanter'],DCC
+"Algoritmos, Redes y Equidad: Análisis de Sistemas Sociotécnicos",CC5117,6,"['CC3101', 'MA3403']",['Andrés_Abeliuk'],DCC
+Minería de Datos,CC5205,6,['CC3001'],"['Juan_José, Valentin_Barriere']",DCC
+Visualización de Información,CC5208,6,['CC3201'],['Eduardo_Graells'],DCC
+Recuperación de Información Multimedia,CC5213,6,['CC3001'],['Juan_Manuel'],DCC
+Introducción a la Criptografía Moderna,CC5301,6,"['CC3001', 'CC30A', 'CC3102', 'CC30B', 'MA3403', 'MA34A', 'MA47A', 'MA4701', 'AUTOR']",['Alejandro_Hevia'],DCC
+Arquitectura de Sistemas de Alta Disponibilidad,CC5304,6,"['CC3201', 'CC42A', 'CC4302', 'CC41B']",['Cesar_Guerrero'],DCC
+Taller de Redes De Datos,CC5322,3,['CC4303'],['Rodrigo_Arenas'],DCC
+Diseño de Sistemas de Internet de las Cosas,CC5326,6,"['CC3301', 'CC4303']",['Luciano_Radrigan'],DCC
+Sistemas embebidos y sensores,CC5328,6,['CC4302'],['Luciano_Radrigan'],DCC
+Ingeniería de Software II,CC5401,6,"['CC4101', 'CC4401']",['Sergio_Ochoa'],DCC
+Proyecto de Software,CC5402,12,"['CC4402', 'CC5205', 'IN3301', 'CC5401', 'CC4303', 'CC4102']","['Cristian_Salazar, Cecilia_Bastarrica, Gonzalo_Alarcon']",DCC
+Taller de Diseño y Desarrollo de Videojuegos,CC5408,6,['CC1002'],['Elías_Zelada'],DCC
+Taller de Videojuegos Multijugador,CC5409,6,['CC3002'],['Elías_Zelada'],DCC
+Mallas Geométricas y Aplicaciones,CC5501,6,"['CC3001', 'AUTOR']",['Benjamín_Mellado'],DCC
+Arquitectura de Motores de Juegos,CC5512,6,"['CC3501', 'CC4302', 'CC4401']",['Daniel_Calderón'],DCC
+Procesamiento geométrico y análisis de formas,CC5513,6,"['CC4102', 'CC3501']",['Iván_Sipiran'],DCC
+Preparación y Evaluación de Proyectos TI,CC5601,6,['CC4402'],['Pablo_González'],DCC
+Gestión Informática,CC5602,6,['CC4402'],['Macarena_Osorio'],DCC
+Gestión y Gobernanza de Datos,CC5603,6,['CC4402'],['Hugo_Beltran'],DCC
+Taller de Desarrollo Comercial,CC5609,3,['CC3002'],['Adolfo_Carrasco'],DCC
+Ética para Ingenieros en Computación,CC5611,3,['CC3002'],['Javier_Bustos'],DCC
+Taller de Comunicación Efectiva: Caso Práctico de Lanzamiento de Producto,CC5613,3,['CC3002'],['Eduardo_Godoy'],DCC
+Herramientas para el Trabajo en Equipo,CC5614,3,['CC3002'],['Andrea_Rodríguez'],DCC
+"Taller de Transformación Digital, una Visión Empresarial",CC5618,3,['CC4401'],['Hugo_Beltran'],DCC
+Introducción al Derecho Informático,CC5620,6,['CC4901'],"['Tomás_Brancoli, Arantxa_Ereche']",DCC
+Informática Médica,CC5701,3,"['CC3201', 'CC42A', 'AUTOR']",['Sandra_Fuente'],DCC
+Taller de Práctica Profesional II,CC5900,,['Taller_requisito_para_realizar_la_Práctica_Profesional_II'],['Iván_Sipiran'],DCC
+Práctica Profesional II,CC5901,7,"['CC4901', 'CC4401', 'CC4101', 'CC5900']",['Iván_Sipiran'],DCC
+Trabajo Dirigido,CC5905,6,['AUTOR'],"['Nancy_Hitschfeld, Francisco_Gutiérrez, Sergio_Ochoa, Felipe_Bravo, Alejandro_Hevia, Aidan_Hogan, Matías_Toro']",DCC
+Pensamiento Estadístico,CC6104,6,"['CC5206', 'MA3403', 'MA3401', 'CC5205', 'EL3104', 'IN3141']",['Felipe_Bravo'],DCC
+Deep Learning,CC6204,6,['CC5205'],['Valentin_Barriere'],DCC
+Innovación y Emprendimiento,CC6603,6,['CC4401'],['Hugo_Beltran'],DCC
+Introducción al Trabajo de Título,CC6907,6,"['CC4402', 'CR267']",['Cecilia_Bastarrica'],DCC
+Introducción al Trabajo de Título,CC6908,3,"['CR267', 'EI4205S', 'EI2090', 'CC5401']",['Cecilia_Bastarrica'],DCC
+Trabajo de Título,CC6909,21,"['CC6908', 'EI4205', 'EI2090', 'CC5402']","['Aidan_Hogan, Eduardo_Graells, Matías_Toro, Sebastián_Ferrada, Gonzalo_Navarro, Luciano_Radrigan, Nancy_Hitschfeld, Andrés_Muñoz, Francisco_Gutiérrez, Sergio_Ochoa, Jocelyn_Simmonds, Andrés_Abeliuk, José_Saavedra, Cecilia_Bastarrica, Luis_Mateu, Benjamín_Bustos, Felipe_Bravo, Javier_Bustos, Iván_Sipiran']",DCC
+Trabajo de Título,CC6919,CC6907,['CC6909'],"['Nancy_Hitschfeld, Francisco_Gutiérrez, Claudio_Gutiérrez, Benjamín_Bustos, Jocelyn_Simmonds, Andrés_Abeliuk, Éric_Tanter, Eduardo_Godoy, Aidan_Hogan, José_Saavedra, Nelson_Baloian, Iván_Sipiran, Cecilia_Bastarrica']",DCC
+Pasantía de Investigación I,CC7010,3,,['Gonzalo_Navarro'],DCC
+Pasantía de Investigación II,CC7015,3,,['Gonzalo_Navarro'],DCC
+Investigación Dirigida,CC7020,6,,['Gonzalo_Navarro'],DCC
+"Introducción a Coq: Lógica, Tipos y Verificación",CC7125,6,"['CC4101', 'MA3705', 'MA4702', 'AUTOR']",['Éric_Tanter'],DCC
+La Web de Datos,CC7220,6,['CC3201'],['Aidan_Hogan'],DCC
+Estructuras de Datos Comprimidas,CC7320,6,"['CC4102', 'AUTOR']",['Gonzalo_Navarro'],DCC
+Análisis y Uso de Algoritmos Geométricos,CC7513,CC4102/AUTOR,['Electivo_Magíster_y_Doctorado_en_Computación'],['Nancy_Hitschfeld'],DCC
+"Investigación en Ciencias de la Computación (Métodos, Técnicas, Perspectivas)",CC7910,6,"['CC4102', 'AUTOR']",['Claudio_Gutiérrez'],DCC
+Introducción a la Tesis,CC7920,18,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis I,CC7970,,['CC797'],['Nancy_Hitschfeld'],DCC
+Trabajo de Tesis II,CC7980,,['CC798'],['Nancy_Hitschfeld'],DCC
+Trabajo de Tesis I,CC8910,30,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis II,CC8920,30,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis III,CC8930,30,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis IV,CC8940,30,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis V,CC8950,30,,['Gonzalo_Navarro'],DCC
+Trabajo de Tesis VI,CC8960,30,,['Gonzalo_Navarro'],DCC
+Gestión de Proyectos de TI,CC63B,,['Curso_Exclusivo_del_Magister_Profesional'],['Sergio_Ochoa'],DCC
+Negociación de Proyectos de TI,CC63C,3,,['Marcelo_Cristián'],DCC
+Gestión del Conocimiento,CC63E,,"['""CURSO_EXCLUSIVO_DEL_MAGISTER_PROFESIONAL""']",['Marcelo_Cristián'],DCC
+Liderando Transformaciones desde el Sentido,CC63Y,,['Electivo_Magíster_Profesional'],['Veronica_Virgilio'],DCC
+Algoritmos Evolutivos,CC66M,,,['Alexandre_Bergel'],DCC
+Inteligencia Artificial en Robótica,CC66O,,,['Rodrigo_Verschae'],DCC
+Procesamiento de Lenguaje Natural,CC66Q,,,['Andrés_Abeliuk'],DCC
+Taller de Proyecto IA,CC66R,,,['Juan_Manuel'],DCC
+Machine Learning,CC66S,,['Electivo_Magíster_Profesional'],"['María_José, Ignacio_Meza, Felipe_Bravo']",DCC
+Reconocimiento Visual con Deep Learning,CC66T,,['Curso_exclusivo_del_Magíster_Profesional'],['José_Saavedra'],DCC
+Redes Neuronales y Deep Learning,CC66U,,['Curso_exclusivo_del_Magíster_Profesional'],['Iván_Sipiran'],DCC
+Avances en Bases de Datos,CC73F,,['SOLO_MAGISTER_PROFESIONAL'],"['Sergio_Ochoa, Rodrigo_Frez']",DCC
+Taller de Gestión de Proyectos de TI,CC73J,,['Electivo_del_Magíster_Profesional'],"['Sergio_Ochoa, Tomas_Vera']",DCC
+Seminario de Proyectos de TI I,CC79E,6,,"['Sergio_Ochoa, Benjamín_Bustos']",DCC
+Seminario de Proyectos de TI II,CC79F,6,['CC79E'],"['Sergio_Ochoa, Benjamín_Bustos']",DCC
+Proyecto de Grado I,CC79G,21,['CC79F'],"['Sergio_Ochoa, Benjamín_Bustos']",DCC
+Proyecto de Grado II,CC79H,21,['CC79G'],"['Sergio_Ochoa, Benjamín_Bustos']",DCC

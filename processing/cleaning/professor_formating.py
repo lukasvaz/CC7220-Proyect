@@ -1,8 +1,9 @@
 import csv
 import ast
+import datetime
 
 def process_string(s):
-    return s.replace('.', '').replace('-', '').replace('/a','').replace('  ','_').replace(' ', '_').replace('""','"')
+    return s.replace('.', '').replace("'",'').replace('-', '').replace('/a','').replace('  ','_').replace(' ', '_').replace('""','"')
 
 input_file = 'profesores_formateados.csv'
 output_file = 'professor_formating_processed.csv'
@@ -18,6 +19,7 @@ with open(input_file, mode='r', encoding='utf-8') as infile, open(output_file, m
         grados = ast.literal_eval(row['Grados'])
         for grado in grados:
             grado['Grado'] = process_string(grado['Grado'])
-            grado['Institucion'] = process_string(grado['Institucion'])
+            grado['Institucion'] = process_string(grado['Institucion']).upper()
+            grado['fecha']=datetime.datetime.strptime(grado['fecha'], '%d-%m-%Y').strftime('%Y-%m-%d')
         row['Grados'] = str(grados)
         writer.writerow(row)

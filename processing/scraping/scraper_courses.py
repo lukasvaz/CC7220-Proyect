@@ -4,7 +4,7 @@ import csv
 import os
 
 # URL to scrape
-url = 'https://ucampus.uchile.cl/m/fcfm_catalogo/?semestre=20242&depto=21'
+url = 'https://ucampus.uchile.cl/m/fcfm_catalogo/?semestre=20242&depto=5' # set to  5 to DCC , set to 21 to DIM 
 
 response = requests.get(url)
 
@@ -21,9 +21,8 @@ if os.path.isfile('courses_info.csv'):
 else:
     with open('courses_info.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Titulo', 'Codigo', 'Creditos', 'Requisitos', 'Profesores'])
+        writer.writerow(['Titulo', 'Codigo', 'Creditos', 'Requisitos', 'Profesores', 'Departamento'])
 
-print(existing_codigos)
 with open('courses_info.csv', mode='a', newline='') as file:
     writer = csv.writer(file)
     for ramo in ramos:
@@ -41,6 +40,11 @@ with open('courses_info.csv', mode='a', newline='') as file:
             for seccion in secciones:
                 profes+=[profe.text.strip() for profe in  seccion.find_all('h1')]
             profes=list(set(profes))
+            
+            if codigo.startswith("CC"):
+                departamento="DCC"
+            else:
+                departamento="DIM"
+            
             if codigo not in existing_codigos:
-                print(codigo)
-                writer.writerow([titulo, codigo, creditos, requisitos, profes])
+                writer.writerow([titulo, codigo, creditos, requisitos, profes, departamento])

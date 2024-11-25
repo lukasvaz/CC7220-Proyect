@@ -1,0 +1,2289 @@
+
+@base <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://www.example.org/ontology#> .
+
+ex:Profesor rdf:type rdfs:Class; rdf:subClassOf ex:Person.
+ex:Cargo rdf:type rdfs:Class .
+ex:Grado rdf:type rdfs:Class .
+ex:Departamento rdf:type rdfs:Class .
+ex:Curso rdf:type rdfs:Class .
+ex:Universidad rdf:type rdfs:Class .
+ex:Estudio rdf:type rdfs:Class .
+
+#Propiedades
+#profesor
+ex:departamento rdf:type rdf:Property ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Departamento .
+
+ex:cargo rdf:type rdf:Property ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Cargo .
+
+ex:estudio rdf:type rdf:Property ;
+    rdfs:domain ex:Profesor ;
+    rdfs:range ex:Estudio .
+
+#Estudio
+ex:fecha rdf:type rdf:Property ;
+    rdfs:domain ex:Estudio ;
+    rdfs:range xsd:date .
+
+ex:institucion rdf:type rdf:Property ;
+    rdfs:domain ex:Estudio ;
+    rdfs:range ex:Universidad .
+
+ex:grado rdf:type rdf:Property ;
+    rdfs:domain ex:Estudio ;
+    rdfs:range ex:Grado .
+
+#Curso
+ex:departamento rdf:type rdf:Property ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Departamento .
+ex:impartidoPor rdf:type rdf:Property ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Profesor .
+
+ex:poseeRequisitos rdf:type rdf:Property ;
+    rdfs:domain ex:Curso ;
+    rdfs:range ex:Curso .
+ex:Andres_Abeliuk rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-12-15"^^xsd:date ;
+ex:institucion ex:U_DE_MELBOURNE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2012-06-01"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Asistente .
+ex:Nelson_Baloian rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1998-12-31"^^xsd:date ;
+ex:institucion ex:U_DE_DUISBURG ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1988-04-05"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Asociado .
+ex:Maria_Bastarrica rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2000-08-31"^^xsd:date ;
+ex:institucion ex:U_OF_CONNECTICUT ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-11-11"^^xsd:date ;
+ex:institucion ex:PONTIFICIA_UNIVERSIDAD_CATOLICA_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asociado .
+ex:Javier_Bustos rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2007-01-02"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-12-18"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_DE_NICESOPHIA_ANTIPOLIS ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2003-08-29"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2001-03-23"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Adjunto .
+ex:Ivana_Bachmann rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2022-10-28"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-05-09"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-05-09"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asistente .
+ex:Valentin_Barriere rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2016-05-25"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_PARISSACLAY ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asistente .
+ex:Jose_Benguria rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-11-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asistente .
+ex:Benjamin_Bustos rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-10-16"^^xsd:date ;
+ex:institucion ex:U_OF_KONSTANZ ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2002-09-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2001-04-06"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Titular .
+ex:Ricardo_Baeza rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1989-05-26"^^xsd:date ;
+ex:institucion ex:U_OF_WATERLOO ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1986-05-06"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1985-01-22"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Electrico];
+ex:cargo ex:Prof_Titular .
+ex:Juan_Barrios rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2003-06-13"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:cargo ex:Prof_Adjunto .
+ex:Felipe_Bravo rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-12-13"^^xsd:date ;
+ex:institucion ex:UNIVERSITY_OF_WAIKATO ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2013-10-01"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-11-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Industrial];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-11-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Asociado .
+ex:Eduardo_Godoy rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2023-01-25"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_ANDRES_BELLO ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1997-08-12"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-07-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Adjunto .
+ex:Pablo_Gonzalez rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1999-05-26"^^xsd:date ;
+ex:institucion ex:U_DE_EXETER ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-10-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-08-27"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_SANTIAGO_DE_CHILE ;
+ex:grado  ex:Ingeniero_Ejec_en_Informatica];
+ex:cargo ex:Prof_Adjunto .
+ex:Cesar_Guerrero rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2001-11-09"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1992-10-09"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Instructor_Adjunto .
+ex:Alejandro_Hevia rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2002-12-14"^^xsd:date ;
+ex:institucion ex:U_OF_CALIFORNIA_SAN_DIEGO ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2002-05-14"^^xsd:date ;
+ex:institucion ex:U_OF_CALIFORNIA_SAN_DIEGO ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1998-11-27"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Asociado .
+ex:Patricio_Inostroza rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2002-04-22"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_JOSEPH_FOURIER ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-06-14"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:cargo ex:Prof_Asistente .
+ex:Dionisio_Gonzalez rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1997-10-14"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1997-04-15"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Instructor_Adjunto .
+ex:Claudio_Gutierrez rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1999-05-30"^^xsd:date ;
+ex:institucion ex:U_DE_WESLEYAN ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-11-04"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Titular .
+ex:Nancy_Hitschfeld rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1993-05-14"^^xsd:date ;
+ex:institucion ex:ETH_ZURICH ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-06-19"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Titular .
+ex:Max_Isakson rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1965-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Industrial];
+ex:cargo ex:Prof_Asistente .
+ex:Eduardo_Graells rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2015-08-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_POMPEU_FABRA ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-12-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-12-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asistente .
+ex:Francisco_Gutierrez rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-06-02"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2012-11-07"^^xsd:date ;
+ex:institucion ex:ECOLE_CENTRALE_DE_NANTES ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2012-08-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2012-05-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Asistente .
+ex:Aidan_Hogan rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2011-03-24"^^xsd:date ;
+ex:institucion ex:UNIVERSITAS_HIBERNIAE_NATIONALIS ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asociado .
+ex:Luis_Mateu rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1993-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_PARIS_VI ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-12-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Informatico];
+ex:cargo ex:Prof_Adjunto .
+ex:Andres_Munoz rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2000-11-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2000-08-15"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Instructor_Adjunto .
+ex:Federico_Olmedo rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2014-03-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_POLITECNICA_DE_MADRID ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2008-12-22"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_NACIONAL_DE_ROSARIO ;
+ex:grado  ex:Licenciado_en_Ciencias];
+ex:cargo ex:Prof_Asistente .
+ex:Jose_Piquer rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-03-21"^^xsd:date ;
+ex:institucion ex:ECOLE_POLYTECHNIQUE_PARIS ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1986-11-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asociado .
+ex:Jose_Saavedra rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2013-03-08"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-07-21"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_NACIONAL_DE_TRUJILLO ;
+ex:grado  ex:Computacion];
+ex:cargo ex:Prof_Adjunto .
+ex:Gonzalo_Navarro rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1998-12-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-04-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Titular .
+ex:Daniel_Perovich rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2014-09-30"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2009-03-19"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_LA_REPUBLICA ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2001-06-14"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_LA_REPUBLICA ;
+ex:grado  ex:Ingeniero_en_Computacion_e_Informatica];
+ex:cargo ex:Prof_Adjunto .
+ex:Barbara_Poblete rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-02-23"^^xsd:date ;
+ex:institucion ex:UNIVERSITAT_POMPEU_FABRA ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-12-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-12-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asociado .
+ex:Jocelyn_Simmonds rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2011-06-10"^^xsd:date ;
+ex:institucion ex:UNIVERSITY_OF_TORONTO ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2005-04-05"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2003-09-12"^^xsd:date ;
+ex:institucion ex:VRIJE_UNIVERSITEIT_BRUSSEL ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asociado .
+ex:Sergio_Ochoa rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2002-09-05"^^xsd:date ;
+ex:institucion ex:PONTIFICIA_UNIVERSIDAD_CATOLICA_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1996-10-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_NACIONAL_DEL_CENTRO_DE_BUENOS_AIRES ;
+ex:grado  ex:Ingeniero_en_Gestion_Informatica];
+ex:cargo ex:Prof_Asociado .
+ex:Jose_Pino rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1977-04-13"^^xsd:date ;
+ex:institucion ex:U_DE_MICHIGAN ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1974-10-16"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Maria_Rivara rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1984-12-24"^^xsd:date ;
+ex:institucion ex:UCATOLICA_DE_LOVAINA ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1980-09-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_CATOLICA_DE_LOVAINA ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1973-12-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Ivan_Sipiran rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2014-03-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asistente .
+ex:Eric_Tanter rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-01-06"^^xsd:date ;
+ex:institucion ex:U_DE_NANTES ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Titular .
+ex:Juan_Alvarez rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-12-31"^^xsd:date ;
+ex:institucion ex:U_DE_WATERLOO ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1982-04-08"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_de_Ejecucion_en_Computacion_e_Informatica];
+ex:cargo ex:Prof_Asistente .
+ex:Matias_Toro rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2019-07-19"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2008-05-13"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_en_Computacion];
+ex:cargo ex:Prof_Asistente .
+ex:Sandra_Fuente rdf:type ex:Profesor ;
+    ex:departamento ex:DCC ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1998-08-21"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1976-09-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Profesor_De_Estado];
+ex:cargo ex:Prof_Adjunto .
+ex:Vicente_Acuna rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-12-21"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Adjunto .
+ex:Ricardo_Freire rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2022-08-23"^^xsd:date ;
+ex:institucion ex:IMPA ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Investigador_Postdoctoral .
+ex:Pablo_Dartnell rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-07-06"^^xsd:date ;
+ex:institucion ex:UNIVERSITY_OF_YALE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1988-12-13"^^xsd:date ;
+ex:institucion ex:UNIVERSITY_OF_YALE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-06-08"^^xsd:date ;
+ex:institucion ex:UNIVERSITY_OF_YALE ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1985-07-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Adjunto .
+ex:Joaquin_Fontbona rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-03-03"^^xsd:date ;
+ex:institucion ex:U_PIERRE_EL_MARIE_CURIE_PARIS_VI ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1999-08-06"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Asociado .
+ex:Rayssa_Aires rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2019-04-03"^^xsd:date ;
+ex:institucion ex:UNIVERSIDADE_FEDERAL_DA_PARAIB ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asistente .
+ex:Carlos_Conca rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-07-01"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_PIERRE_ET_MARIE_CURIE_PARIS_6 ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1985-01-22"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_PIERRE_ET_MARIE_CURIE_PARIS_6 ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1977-01-25"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Sebastian_Donoso rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2015-06-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2015-05-28"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_PARISEST ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2011-08-12"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Asociado .
+ex:Raul_Gormaz rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_GRENOBLE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1979-08-17"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asistente .
+ex:Jorge_Amaya rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_LOVAINA ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1976-07-20"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Adjunto .
+ex:Rafael_Correa rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1987-12-31"^^xsd:date ;
+ex:institucion ex:U_BLAISE_PASCAL ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1971-09-08"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Patricio_Felmer rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1989-08-27"^^xsd:date ;
+ex:institucion ex:U_OF_WISCONSIN_MADISON ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1986-12-21"^^xsd:date ;
+ex:institucion ex:U_OF_WISCONSIN_MADISON ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-08-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Raul_Gouet rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-06-15"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1981-06-24"^^xsd:date ;
+ex:institucion ex:U_DE_PARIS_XI_ORSAY ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asociado .
+ex:Rodolfo_Gutierrez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2019-04-08"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_SORBONNE_PARIS_CITE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2015-09-04"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2015-07-10"^^xsd:date ;
+ex:institucion ex:UNIVERSITE_PARISSACLAY ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Asistente .
+ex:Marcos_Kiwi rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1996-02-21"^^xsd:date ;
+ex:institucion ex:MASSACHUSETTS_INSTITUTE_OF_TECHNOLOGY ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-08-06"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1990-01-09"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Titular .
+ex:Alejandro_Maass rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-07-07"^^xsd:date ;
+ex:institucion ex:U_DAIXMARSEILLE_II ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1990-06-15"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Servet_Martinez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1986-12-31"^^xsd:date ;
+ex:institucion ex:U_PIERRE_ET_MARIE_CURIE_PARIS_VI ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1975-10-28"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Flavio_Guinez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2009-12-22"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-06-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado_en_Ciencias_con_mencion_en_Matematicas];
+ex:cargo ex:Prof_Adjunto .
+ex:Michal_Kowalczyk rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2005-07-22"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-08-11"^^xsd:date ;
+ex:institucion ex:U_DE_TENNESSEE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1988-12-31"^^xsd:date ;
+ex:institucion ex:U_DE_VARSOVIA ;
+ex:grado  ex:Magister];
+ex:cargo ex:Prof_Titular .
+ex:Raul_Manasevich rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1971-06-15"^^xsd:date ;
+ex:institucion ex:U_OF_CALIFORNIA_BERKELEY ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1968-06-30"^^xsd:date ;
+ex:institucion ex:U_OF_CALIFORNIA_BERKELEY ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1966-09-02"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:cargo ex:Prof_Titular .
+ex:Salome_Martinez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2000-07-31"^^xsd:date ;
+ex:institucion ex:U_OF_MINNESOTA ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-07-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Rene_Jofre rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1989-12-31"^^xsd:date ;
+ex:institucion ex:U_DE_PAU ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1984-10-30"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Fernando_Lema rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1981-01-20"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Instructor .
+ex:Maria_Martinez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2016-07-28"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_NACIONAL_DE_RIO_CUARTO ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Instructor .
+ex:Martin_Matamala rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-11-29"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Titular .
+ex:Claudio_Munoz rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2010-06-23"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_VERSALLES_SAINTQUENTINENYVELINES ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-09-15"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Axel_Osses rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1999-05-12"^^xsd:date ;
+ex:institucion ex:ECOLE_POLYTECHNIQUE_PARIS ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1994-07-14"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-01-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Titular .
+ex:Javier_Ramirez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2016-08-25"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_SANTIAGO_DE_CHILE ;
+ex:grado  ex:Ingeniero_Matematico];
+ex:cargo ex:Prof_Adjunto .
+ex:Gabrielle_Nornberg rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2018-08-07"^^xsd:date ;
+ex:institucion ex:PONTIFICIA_UNIVERSIDAD_CATOLICA_DE_RIO_DE_JANERIRO ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asistente .
+ex:Diana_Narvaez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2011-04-16"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DEL_VALLE ;
+ex:grado  ex:Matematica];
+ex:cargo ex:Prof_Adjunto .
+ex:Pedro_Perez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2018-01-19"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2014-12-12"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Asociado .
+ex:Ivan_Rapaport rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1998-06-23"^^xsd:date ;
+ex:institucion ex:ECOLE_NORMALE_SUPERIEURE_DE_LYON ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1995-06-23"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Jaime_SanMartin rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1990-12-31"^^xsd:date ;
+ex:institucion ex:U_OF_PURDUE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1985-07-26"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Titular .
+ex:Jaime_Ortega rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1997-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_COMPLUTENSE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1991-11-07"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CONCEPCION ;
+ex:grado  ex:Magister];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1989-04-20"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CONCEPCION ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Titular .
+ex:Patricio_Quiroz rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2008-05-06"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado_en_Ciencias];
+ex:cargo ex:Prof_Adjunto .
+ex:Daniel_Remenik rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2009-08-17"^^xsd:date ;
+ex:institucion ex:U_CORNELL ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-11-30"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2004-07-20"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Titular .
+ex:Jorge_SanMartin rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1996-11-20"^^xsd:date ;
+ex:institucion ex:U_PIERRE_ET_MARIE_CURIE_PARIS_VI ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1988-11-29"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:cargo ex:Prof_Asociado .
+ex:Leonardo_Sepulveda rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-09-20"^^xsd:date ;
+ex:institucion ex:LECOLE_POLYTECHNIQUE_FEDERALE_DE_ZURICH ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2013-08-27"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Asistente .
+ex:Mauricio_Telias rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1983-12-31"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_GRENOBLE ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1976-08-13"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:cargo ex:Prof_Asociado .
+ex:Jose_Soto rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2011-06-03"^^xsd:date ;
+ex:institucion ex:MASSACHUSETTS_INSTITUTE_OF_TECHNOLOGY ;
+ex:grado  ex:Doctor];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2006-08-29"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil_Matematico];
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2005-11-18"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Licenciado];
+ex:cargo ex:Prof_Asociado .
+ex:Hanne_VanDenBosch rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "2017-08-09"^^xsd:date ;
+ex:institucion ex:PONTIFICIA_UNIVERSIDAD_CATOLICA_DE_CHILE ;
+ex:grado  ex:Doctor];
+ex:cargo ex:Prof_Asistente .
+ex:Leonardo_Sanchez rdf:type ex:Profesor ;
+    ex:departamento ex:DIM ;
+ex:estudio [
+rdf:type ex:Estudio ;
+ex:fecha "1975-07-11"^^xsd:date ;
+ex:institucion ex:UNIVERSIDAD_DE_CHILE ;
+ex:grado  ex:Ingeniero_Civil];
+ex:cargo ex:Prof_Asistente .
+ex:MA1001 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción al Cálculo" ;
+    ex:impartidoPor ex:Patricio_Quiroz ;
+    ex:impartidoPor ex:Jessica_Trespalacios ;
+    ex:impartidoPor ex:Gabrielle_Nornberg ;
+    ex:impartidoPor ex:Javier_Ramírez ;
+    ex:departamento ex:DIM .
+
+ex:MA1002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Cálculo Diferencial e Integral" ;
+    ex:impartidoPor ex:Leonardo_Sánchez ;
+    ex:impartidoPor ex:Javier_Ramírez ;
+    ex:impartidoPor ex:Pedro_Perez ;
+    ex:impartidoPor ex:Cristián_Reyes ;
+    ex:impartidoPor ex:Patricio_Felmer ;
+    ex:impartidoPor ex:Jorge_San ;
+    ex:impartidoPor ex:Rodolfo_Gutiérrez ;
+    ex:poseeRequisitos ex:MA1001 ;
+    ex:poseeRequisitos ex:MA100 ;
+    ex:departamento ex:DIM .
+
+ex:MA1101 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción al Álgebra" ;
+    ex:impartidoPor ex:Iván_Rapaport ;
+    ex:impartidoPor ex:Maya_Stein ;
+    ex:impartidoPor ex:Flavio_Guiñez ;
+    ex:departamento ex:DIM .
+
+ex:MA1102 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Álgebra Lineal" ;
+    ex:impartidoPor ex:Vicente_Acuña ;
+    ex:impartidoPor ex:Jaime_San ;
+    ex:impartidoPor ex:Marcos_Kiwi ;
+    ex:impartidoPor ex:Martín_Matamala ;
+    ex:impartidoPor ex:Pablo_Dartnell ;
+    ex:impartidoPor ex:Mauricio_Telias ;
+    ex:impartidoPor ex:Natacha_Astromujoff ;
+    ex:impartidoPor ex:Melanie_Sánchez ;
+    ex:impartidoPor ex:Alejandro_Maass ;
+    ex:poseeRequisitos ex:MA1101 ;
+    ex:poseeRequisitos ex:MA110 ;
+    ex:departamento ex:DIM .
+
+ex:MA2001 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Cálculo en Varias Variables" ;
+    ex:impartidoPor ex:Patricio_Quiroz ;
+    ex:impartidoPor ex:Alexis_Fuentes ;
+    ex:impartidoPor ex:Javier_Ramírez ;
+    ex:poseeRequisitos ex:MA1002 ;
+    ex:poseeRequisitos ex:MA1A2 ;
+    ex:poseeRequisitos ex:MA1102 ;
+    ex:poseeRequisitos ex:MA1B2 ;
+    ex:departamento ex:DIM .
+
+ex:MA2002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Cálculo Avanzado y Aplicaciones" ;
+    ex:impartidoPor ex:Jaime_Ortega ;
+    ex:impartidoPor ex:Pablo_Araya ;
+    ex:impartidoPor ex:Avelio_Sepúlveda ;
+    ex:impartidoPor ex:Carlos_Conca ;
+    ex:impartidoPor ex:Ricardo_Carlos ;
+    ex:impartidoPor ex:Jorge_San ;
+    ex:poseeRequisitos ex:MA2001 ;
+    ex:poseeRequisitos ex:MA2A1 ;
+    ex:poseeRequisitos ex:MA2601 ;
+    ex:poseeRequisitos ex:MA2G1 ;
+    ex:departamento ex:DIM .
+
+ex:MA2601 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Ecuaciones Diferenciales Ordinarias" ;
+    ex:impartidoPor ex:Jessica_Trespalacios ;
+    ex:impartidoPor ex:Gabrielle_Nornberg ;
+    ex:poseeRequisitos ex:MA1002 ;
+    ex:poseeRequisitos ex:MA1A2 ;
+    ex:poseeRequisitos ex:MA1102 ;
+    ex:poseeRequisitos ex:MA1B2 ;
+    ex:departamento ex:DIM .
+
+ex:MA3002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Tópicos en Análisis Convexo" ;
+    ex:impartidoPor ex:Rafael_Correa ;
+    ex:poseeRequisitos ex:MA2001 ;
+    ex:departamento ex:DIM .
+
+ex:MA3101 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Elementos de Álgebra" ;
+    ex:impartidoPor ex:Maya_Stein ;
+    ex:poseeRequisitos ex:MA2001 ;
+    ex:poseeRequisitos ex:MA2A1 ;
+    ex:departamento ex:DIM .
+
+ex:MA3402 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Estadística" ;
+    ex:impartidoPor ex:Joaquin_Fontbona ;
+    ex:poseeRequisitos ex:MA3401 ;
+    ex:poseeRequisitos ex:MA34A ;
+    ex:departamento ex:DIM .
+
+ex:MA3403 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Probabilidades y Estadística" ;
+    ex:impartidoPor ex:Raul_Gouet ;
+    ex:impartidoPor ex:Servet_Martinez ;
+    ex:impartidoPor ex:Fernando_Lema ;
+    ex:poseeRequisitos ex:MA2001 ;
+    ex:poseeRequisitos ex:MA2A1 ;
+    ex:departamento ex:DIM .
+
+ex:MA3701 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Optimización" ;
+    ex:impartidoPor ex:Jorge_Amaya ;
+    ex:poseeRequisitos ex:MA2002 ;
+    ex:departamento ex:DIM .
+
+ex:MA3705 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Algoritmos Combinatoriales" ;
+    ex:impartidoPor ex:José_Soto ;
+    ex:poseeRequisitos ex:MA3711 ;
+    ex:departamento ex:DIM .
+
+ex:MA3801 rdf:type ex:Curso ;
+    ex:creditos 9 ;
+    ex:titulo "Análisis" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA2002 ;
+    ex:poseeRequisitos ex:MA2A2 ;
+    ex:departamento ex:DIM .
+
+ex:MA3802 rdf:type ex:Curso ;
+    ex:creditos 9 ;
+    ex:titulo "Teoría de la Medida" ;
+    ex:impartidoPor ex:Jaime_San ;
+    ex:poseeRequisitos ex:MA3801 ;
+    ex:departamento ex:DIM .
+
+ex:MA4111 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción a la Historia de la Matemática" ;
+    ex:impartidoPor ex:Raúl_Gormaz ;
+    ex:poseeRequisitos ex:MA3801 ;
+    ex:departamento ex:DIM .
+
+ex:MA4402 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Simulación Estocástica: Teoría y Laboratorio" ;
+    ex:impartidoPor ex:Avelio_Sepúlveda ;
+    ex:poseeRequisitos ex:MA4401 ;
+    ex:departamento ex:DIM .
+
+ex:MA4703 rdf:type ex:Curso ;
+    ex:creditos 9 ;
+    ex:titulo "Control Óptimo: Teoría y Laboratorio" ;
+    ex:impartidoPor ex:Héctor_Ramírez ;
+    ex:poseeRequisitos ex:MA4801 ;
+    ex:departamento ex:DIM .
+
+ex:MA4801 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Análisis Funcional" ;
+    ex:impartidoPor ex:Salome_Martinez ;
+    ex:poseeRequisitos ex:MA3802 ;
+    ex:departamento ex:DIM .
+
+ex:MA4802 rdf:type ex:Curso ;
+    ex:creditos 9 ;
+    ex:titulo "Ecuaciones en Derivadas Parciales" ;
+    ex:impartidoPor ex:Rayssa_Aires ;
+    ex:impartidoPor ex:Claudio_Muñoz ;
+    ex:poseeRequisitos ex:MA4801 ;
+    ex:departamento ex:DIM .
+
+ex:MA4902 rdf:type ex:Curso ;
+    ex:creditos 7 ;
+    ex:titulo "Práctica Profesional I" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA3402 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA5306 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Problemas Inversos y de Control de EDP" ;
+    ex:impartidoPor ex:Axel_Osses ;
+    ex:poseeRequisitos ex:MA4601 ;
+    ex:poseeRequisitos ex:MA4802 ;
+    ex:departamento ex:DIM .
+
+ex:MA5402 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Cálculo Estocástico" ;
+    ex:impartidoPor ex:Daniel_Remenik ;
+    ex:poseeRequisitos ex:MA4401 ;
+    ex:departamento ex:DIM .
+
+ex:MA5500 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Laboratorio de Modelamiento Matemático I" ;
+    ex:impartidoPor ex:Jaime_San ;
+    ex:impartidoPor ex:Alejandro_Maass ;
+    ex:poseeRequisitos ex:MA49A ;
+    ex:poseeRequisitos ex:MA4902 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA5505 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Teoría de Grafos" ;
+    ex:impartidoPor ex:Martín_Matamala ;
+    ex:poseeRequisitos ex:MA3705 ;
+    ex:departamento ex:DIM .
+
+ex:MA5506 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Seminario de Recurrencia en Teoría Ergódica" ;
+    ex:impartidoPor ex:Sebastián_Donoso ;
+    ex:poseeRequisitos ex:MA3802 ;
+    ex:poseeRequisitos ex:MA5802 ;
+    ex:departamento ex:DIM .
+
+ex:MA5509 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Ecología Matemática" ;
+    ex:impartidoPor ex:Salome_Martinez ;
+    ex:poseeRequisitos ex:MA2002 ;
+    ex:departamento ex:DIM .
+
+ex:MA5603 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Análisis no Lineal" ;
+    ex:impartidoPor ex:Raul_Manasevich ;
+    ex:poseeRequisitos ex:MA5601 ;
+    ex:poseeRequisitos ex:MA4802 ;
+    ex:departamento ex:DIM .
+
+ex:MA5801 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Análisis Convexo y Dualidad" ;
+    ex:impartidoPor ex:Alejandro_Jofré ;
+    ex:poseeRequisitos ex:MA4801 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA5902 rdf:type ex:Curso ;
+    ex:creditos 7 ;
+    ex:titulo "Práctica Profesional II" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA4902 ;
+    ex:poseeRequisitos ex:MA4402 ;
+    ex:poseeRequisitos ex:MA4703 ;
+    ex:departamento ex:DIM .
+
+ex:MA6140 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Computación Distribuida" ;
+    ex:impartidoPor ex:Iván_Rapaport ;
+    ex:poseeRequisitos ex:MA3705 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA6420 rdf:type ex:Curso ;
+    ex:titulo "Seminarios" ;
+    ex:impartidoPor ex:Daniel_Remenik ;
+    ex:poseeRequisitos ex:Electivo_Doctorado ;
+    ex:departamento ex:DIM .
+
+ex:MA6902 rdf:type ex:Curso ;
+    ex:creditos 7 ;
+    ex:titulo "Práctica Profesional III" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA5902 ;
+    ex:poseeRequisitos ex:MA4703 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA6908 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Introducción al Trabajo de Título" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:departamento ex:DIM .
+
+ex:MA6909 rdf:type ex:Curso ;
+    ex:creditos 21 ;
+    ex:titulo "Trabajo de Título" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA6908 ;
+    ex:poseeRequisitos ex:MA6907 ;
+    ex:poseeRequisitos ex:EI4205S ;
+    ex:poseeRequisitos ex:EI2090 ;
+    ex:departamento ex:DIM .
+
+ex:MA6910 rdf:type ex:Curso ;
+    ex:creditos 21 ;
+    ex:titulo "Trabajo de Memoria de Título" ;
+    ex:impartidoPor ex:Hanne_Van ;
+    ex:poseeRequisitos ex:MA6908 ;
+    ex:poseeRequisitos ex:MA6907 ;
+    ex:poseeRequisitos ex:EI4205 ;
+    ex:poseeRequisitos ex:EI2090 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DIM .
+
+ex:MA7990 rdf:type ex:Curso ;
+    ex:titulo "Introducción a la Tesis I" ;
+    ex:departamento ex:DIM .
+
+ex:MA7991 rdf:type ex:Curso ;
+    ex:titulo "Introducción a la Tesis II" ;
+    ex:departamento ex:DIM .
+
+ex:MA8901 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis I" ;
+    ex:departamento ex:DIM .
+
+ex:MA8902 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis II" ;
+    ex:departamento ex:DIM .
+
+ex:MA8903 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis III" ;
+    ex:departamento ex:DIM .
+
+ex:MA8904 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis IV" ;
+    ex:departamento ex:DIM .
+
+ex:MA8961 rdf:type ex:Curso ;
+    ex:titulo "Taller de Tesis" ;
+    ex:poseeRequisitos ex:Obligatorio_para_el_Magíster_en_Matemáticas_Aplicadas ;
+    ex:departamento ex:DIM .
+
+ex:MA8962 rdf:type ex:Curso ;
+    ex:titulo "Seminario de Titulación" ;
+    ex:poseeRequisitos ex:Sólo_para_Magíster_y_Doctorado ;
+    ex:departamento ex:DIM .
+
+ex:MA8963 rdf:type ex:Curso ;
+    ex:titulo "Seminario de Titulación" ;
+    ex:departamento ex:DIM .
+
+ex:MA799 rdf:type ex:Curso ;
+    ex:titulo "Introducción a la Tesis" ;
+    ex:departamento ex:DIM .
+
+ex:CC1000 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Herramientas Computacionales para Ingeniería y Ciencias" ;
+    ex:impartidoPor ex:Juan_Álvarez ;
+    ex:departamento ex:DCC .
+
+ex:CC1002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción a la Programación" ;
+    ex:impartidoPor ex:Valentin_Muñoz ;
+    ex:impartidoPor ex:Francisco_Gutiérrez ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:impartidoPor ex:Cristian_Parra ;
+    ex:impartidoPor ex:Matías_Torrealba ;
+    ex:impartidoPor ex:Eduardo_Godoy ;
+    ex:impartidoPor ex:Nelson_Baloian ;
+    ex:impartidoPor ex:Patricio_Inostroza ;
+    ex:impartidoPor ex:Juan_Álvarez ;
+    ex:poseeRequisitos ex:CR3 ;
+    ex:departamento ex:DCC .
+
+ex:CC3001 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Algoritmos y Estructuras de Datos" ;
+    ex:impartidoPor ex:Patricio_Poblete ;
+    ex:impartidoPor ex:Nelson_Baloian ;
+    ex:impartidoPor ex:Alejandro_Quijada ;
+    ex:poseeRequisitos ex:CC1001 ;
+    ex:poseeRequisitos ex:CC1002 ;
+    ex:poseeRequisitos ex:CR90 ;
+    ex:departamento ex:DCC .
+
+ex:CC3002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Metodologías de Diseño y Programación" ;
+    ex:impartidoPor ex:Ignacio_Slater ;
+    ex:impartidoPor ex:Matías_Toro ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:CC30A ;
+    ex:departamento ex:DCC .
+
+ex:CC3101 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Matemáticas Discretas para la Computación" ;
+    ex:impartidoPor ex:Federico_Olmedo ;
+    ex:poseeRequisitos ex:CC1002 ;
+    ex:poseeRequisitos ex:MA1101 ;
+    ex:departamento ex:DCC .
+
+ex:CC3102 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Teoría de la Computación" ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:impartidoPor ex:Alejandro_Hevia ;
+    ex:poseeRequisitos ex:CC3101 ;
+    ex:poseeRequisitos ex:MA3705 ;
+    ex:departamento ex:DCC .
+
+ex:CC3201 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Bases de Datos" ;
+    ex:impartidoPor ex:Claudio_Gutiérrez ;
+    ex:impartidoPor ex:Matías_Toro ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:departamento ex:DCC .
+
+ex:CC3301 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Programación de Software de Sistemas" ;
+    ex:impartidoPor ex:Rodrigo_Urrea ;
+    ex:impartidoPor ex:Luis_Mateu ;
+    ex:impartidoPor ex:Alexandra_Ibarra ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:departamento ex:DCC .
+
+ex:CC3501 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Modelación y Computación Gráfica para Ingenieros" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC1002 ;
+    ex:poseeRequisitos ex:MA2001 ;
+    ex:poseeRequisitos ex:MA2601 ;
+    ex:poseeRequisitos ex:FI2001 ;
+    ex:departamento ex:DCC .
+
+ex:CC4002 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Taller de Programación B" ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:departamento ex:DCC .
+
+ex:CC4006 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Taller de Programación Competitiva B" ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:departamento ex:DCC .
+
+ex:CC4101 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Lenguajes de Programación" ;
+    ex:impartidoPor ex:Ismael_Figueroa ;
+    ex:impartidoPor ex:Federico_Olmedo ;
+    ex:poseeRequisitos ex:CC3102 ;
+    ex:departamento ex:DCC .
+
+ex:CC4102 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Diseño y Análisis de Algoritmos" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:poseeRequisitos ex:MA3403 ;
+    ex:poseeRequisitos ex:MA3402 ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:CC3102 ;
+    ex:departamento ex:DCC .
+
+ex:CC4301 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Arquitectura de Computadores" ;
+    ex:impartidoPor ex:Luis_Mateu ;
+    ex:poseeRequisitos ex:CC3301 ;
+    ex:poseeRequisitos ex:FI2002 ;
+    ex:departamento ex:DCC .
+
+ex:CC4302 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Sistemas Operativos" ;
+    ex:impartidoPor ex:Rodrigo_Arenas ;
+    ex:impartidoPor ex:Luis_Mateu ;
+    ex:impartidoPor ex:Lucas_Torrealba ;
+    ex:poseeRequisitos ex:CC3301 ;
+    ex:departamento ex:DCC .
+
+ex:CC4303 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Redes" ;
+    ex:impartidoPor ex:Javier_Bustos ;
+    ex:impartidoPor ex:José_Piquer ;
+    ex:poseeRequisitos ex:CC4302 ;
+    ex:departamento ex:DCC .
+
+ex:CC4401 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Ingeniería de Software" ;
+    ex:impartidoPor ex:Jocelyn_Simmonds ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:departamento ex:DCC .
+
+ex:CC4402 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Formulación, Evaluación y Gestión de Proyectos" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Daniel_Perovich ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:poseeRequisitos ex:CD2201 ;
+    ex:poseeRequisitos ex:IN2201 ;
+    ex:departamento ex:DCC .
+
+ex:CC4900 rdf:type ex:Curso ;
+    ex:titulo "Taller de Práctica Profesional I" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC4902 ;
+    ex:departamento ex:DCC .
+
+ex:CC4901 rdf:type ex:Curso ;
+    ex:creditos 7 ;
+    ex:titulo "Práctica Profesional I" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:poseeRequisitos ex:CC3301 ;
+    ex:poseeRequisitos ex:CC4900 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5002 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Desarrollo de Aplicaciones Web" ;
+    ex:impartidoPor ex:José_Urzúa ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:CC30A ;
+    ex:departamento ex:DCC .
+
+ex:CC5101 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Análisis Avanzado de Algoritmos" ;
+    ex:impartidoPor ex:Patricio_Poblete ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:MA3403 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5104 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Lenguajes de Programación II" ;
+    ex:impartidoPor ex:Éric_Tanter ;
+    ex:poseeRequisitos ex:CC4101 ;
+    ex:poseeRequisitos ex:CC41A ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:poseeRequisitos ex:CC51H ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5115 rdf:type ex:Curso ;
+    ex:titulo "Programación Funcional" ;
+    ex:impartidoPor ex:Federico_Olmedo ;
+    ex:departamento ex:DCC .
+
+ex:CC5116 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Diseño e Implementación de Compiladores" ;
+    ex:impartidoPor ex:Éric_Tanter ;
+    ex:poseeRequisitos ex:CC3301 ;
+    ex:poseeRequisitos ex:CC4101 ;
+    ex:departamento ex:DCC .
+
+ex:CC5117 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Algoritmos, Redes y Equidad: Análisis de Sistemas Sociotécnicos" ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:poseeRequisitos ex:CC3101 ;
+    ex:poseeRequisitos ex:MA3403 ;
+    ex:departamento ex:DCC .
+
+ex:CC5205 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Minería de Datos" ;
+    ex:impartidoPor ex:Juan_José ;
+    ex:impartidoPor ex:Valentin_Barriere ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:departamento ex:DCC .
+
+ex:CC5208 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Visualización de Información" ;
+    ex:impartidoPor ex:Eduardo_Graells ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:departamento ex:DCC .
+
+ex:CC5213 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Recuperación de Información Multimedia" ;
+    ex:impartidoPor ex:Juan_Manuel ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:departamento ex:DCC .
+
+ex:CC5301 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción a la Criptografía Moderna" ;
+    ex:impartidoPor ex:Alejandro_Hevia ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:CC30A ;
+    ex:poseeRequisitos ex:CC3102 ;
+    ex:poseeRequisitos ex:CC30B ;
+    ex:poseeRequisitos ex:MA3403 ;
+    ex:poseeRequisitos ex:MA34A ;
+    ex:poseeRequisitos ex:MA47A ;
+    ex:poseeRequisitos ex:MA4701 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5304 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Arquitectura de Sistemas de Alta Disponibilidad" ;
+    ex:impartidoPor ex:Cesar_Guerrero ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:poseeRequisitos ex:CC42A ;
+    ex:poseeRequisitos ex:CC4302 ;
+    ex:poseeRequisitos ex:CC41B ;
+    ex:departamento ex:DCC .
+
+ex:CC5322 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Taller de Redes De Datos" ;
+    ex:impartidoPor ex:Rodrigo_Arenas ;
+    ex:poseeRequisitos ex:CC4303 ;
+    ex:departamento ex:DCC .
+
+ex:CC5326 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Diseño de Sistemas de Internet de las Cosas" ;
+    ex:impartidoPor ex:Luciano_Radrigan ;
+    ex:poseeRequisitos ex:CC3301 ;
+    ex:poseeRequisitos ex:CC4303 ;
+    ex:departamento ex:DCC .
+
+ex:CC5328 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Sistemas embebidos y sensores" ;
+    ex:impartidoPor ex:Luciano_Radrigan ;
+    ex:poseeRequisitos ex:CC4302 ;
+    ex:departamento ex:DCC .
+
+ex:CC5401 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Ingeniería de Software II" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:poseeRequisitos ex:CC4101 ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:departamento ex:DCC .
+
+ex:CC5402 rdf:type ex:Curso ;
+    ex:creditos 12 ;
+    ex:titulo "Proyecto de Software" ;
+    ex:impartidoPor ex:Cristian_Salazar ;
+    ex:impartidoPor ex:Cecilia_Bastarrica ;
+    ex:impartidoPor ex:Gonzalo_Alarcon ;
+    ex:poseeRequisitos ex:CC4402 ;
+    ex:poseeRequisitos ex:CC5205 ;
+    ex:poseeRequisitos ex:IN3301 ;
+    ex:poseeRequisitos ex:CC5401 ;
+    ex:poseeRequisitos ex:CC4303 ;
+    ex:poseeRequisitos ex:CC4102 ;
+    ex:departamento ex:DCC .
+
+ex:CC5408 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Taller de Diseño y Desarrollo de Videojuegos" ;
+    ex:impartidoPor ex:Elías_Zelada ;
+    ex:poseeRequisitos ex:CC1002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5409 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Taller de Videojuegos Multijugador" ;
+    ex:impartidoPor ex:Elías_Zelada ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5501 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Mallas Geométricas y Aplicaciones" ;
+    ex:impartidoPor ex:Benjamín_Mellado ;
+    ex:poseeRequisitos ex:CC3001 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5512 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Arquitectura de Motores de Juegos" ;
+    ex:impartidoPor ex:Daniel_Calderón ;
+    ex:poseeRequisitos ex:CC3501 ;
+    ex:poseeRequisitos ex:CC4302 ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:departamento ex:DCC .
+
+ex:CC5513 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Procesamiento geométrico y análisis de formas" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC4102 ;
+    ex:poseeRequisitos ex:CC3501 ;
+    ex:departamento ex:DCC .
+
+ex:CC5601 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Preparación y Evaluación de Proyectos TI" ;
+    ex:impartidoPor ex:Pablo_González ;
+    ex:poseeRequisitos ex:CC4402 ;
+    ex:departamento ex:DCC .
+
+ex:CC5602 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Gestión Informática" ;
+    ex:impartidoPor ex:Macarena_Osorio ;
+    ex:poseeRequisitos ex:CC4402 ;
+    ex:departamento ex:DCC .
+
+ex:CC5603 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Gestión y Gobernanza de Datos" ;
+    ex:impartidoPor ex:Hugo_Beltran ;
+    ex:poseeRequisitos ex:CC4402 ;
+    ex:departamento ex:DCC .
+
+ex:CC5609 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Taller de Desarrollo Comercial" ;
+    ex:impartidoPor ex:Adolfo_Carrasco ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5611 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Ética para Ingenieros en Computación" ;
+    ex:impartidoPor ex:Javier_Bustos ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5613 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Taller de Comunicación Efectiva: Caso Práctico de Lanzamiento de Producto" ;
+    ex:impartidoPor ex:Eduardo_Godoy ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5614 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Herramientas para el Trabajo en Equipo" ;
+    ex:impartidoPor ex:Andrea_Rodríguez ;
+    ex:poseeRequisitos ex:CC3002 ;
+    ex:departamento ex:DCC .
+
+ex:CC5618 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Taller de Transformación Digital, una Visión Empresarial" ;
+    ex:impartidoPor ex:Hugo_Beltran ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:departamento ex:DCC .
+
+ex:CC5620 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción al Derecho Informático" ;
+    ex:impartidoPor ex:Tomás_Brancoli ;
+    ex:impartidoPor ex:Arantxa_Ereche ;
+    ex:poseeRequisitos ex:CC4901 ;
+    ex:departamento ex:DCC .
+
+ex:CC5701 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Informática Médica" ;
+    ex:impartidoPor ex:Sandra_Fuente ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:poseeRequisitos ex:CC42A ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC5900 rdf:type ex:Curso ;
+    ex:titulo "Taller de Práctica Profesional II" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:Taller_requisito_para_realizar_la_Práctica_Profesional_II ;
+    ex:departamento ex:DCC .
+
+ex:CC5901 rdf:type ex:Curso ;
+    ex:creditos 7 ;
+    ex:titulo "Práctica Profesional II" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC4901 ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:poseeRequisitos ex:CC4101 ;
+    ex:poseeRequisitos ex:CC5900 ;
+    ex:departamento ex:DCC .
+
+ex:CC5905 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Trabajo Dirigido" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:impartidoPor ex:Francisco_Gutiérrez ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Felipe_Bravo ;
+    ex:impartidoPor ex:Alejandro_Hevia ;
+    ex:impartidoPor ex:Aidan_Hogan ;
+    ex:impartidoPor ex:Matías_Toro ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC6104 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Pensamiento Estadístico" ;
+    ex:impartidoPor ex:Felipe_Bravo ;
+    ex:poseeRequisitos ex:CC5206 ;
+    ex:poseeRequisitos ex:MA3403 ;
+    ex:poseeRequisitos ex:MA3401 ;
+    ex:poseeRequisitos ex:CC5205 ;
+    ex:poseeRequisitos ex:EL3104 ;
+    ex:poseeRequisitos ex:IN3141 ;
+    ex:departamento ex:DCC .
+
+ex:CC6204 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Deep Learning" ;
+    ex:impartidoPor ex:Valentin_Barriere ;
+    ex:poseeRequisitos ex:CC5205 ;
+    ex:departamento ex:DCC .
+
+ex:CC6603 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Innovación y Emprendimiento" ;
+    ex:impartidoPor ex:Hugo_Beltran ;
+    ex:poseeRequisitos ex:CC4401 ;
+    ex:departamento ex:DCC .
+
+ex:CC6907 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción al Trabajo de Título" ;
+    ex:impartidoPor ex:Cecilia_Bastarrica ;
+    ex:poseeRequisitos ex:CC4402 ;
+    ex:poseeRequisitos ex:CR267 ;
+    ex:departamento ex:DCC .
+
+ex:CC6908 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Introducción al Trabajo de Título" ;
+    ex:impartidoPor ex:Cecilia_Bastarrica ;
+    ex:poseeRequisitos ex:CR267 ;
+    ex:poseeRequisitos ex:EI4205S ;
+    ex:poseeRequisitos ex:EI2090 ;
+    ex:poseeRequisitos ex:CC5401 ;
+    ex:departamento ex:DCC .
+
+ex:CC6909 rdf:type ex:Curso ;
+    ex:creditos 21 ;
+    ex:titulo "Trabajo de Título" ;
+    ex:impartidoPor ex:Aidan_Hogan ;
+    ex:impartidoPor ex:Eduardo_Graells ;
+    ex:impartidoPor ex:Matías_Toro ;
+    ex:impartidoPor ex:Sebastián_Ferrada ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:impartidoPor ex:Luciano_Radrigan ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:impartidoPor ex:Andrés_Muñoz ;
+    ex:impartidoPor ex:Francisco_Gutiérrez ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Jocelyn_Simmonds ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:impartidoPor ex:José_Saavedra ;
+    ex:impartidoPor ex:Cecilia_Bastarrica ;
+    ex:impartidoPor ex:Luis_Mateu ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:impartidoPor ex:Felipe_Bravo ;
+    ex:impartidoPor ex:Javier_Bustos ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:CC6908 ;
+    ex:poseeRequisitos ex:EI4205 ;
+    ex:poseeRequisitos ex:EI2090 ;
+    ex:poseeRequisitos ex:CC5402 ;
+    ex:departamento ex:DCC .
+
+ex:CC6919 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Título" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:impartidoPor ex:Francisco_Gutiérrez ;
+    ex:impartidoPor ex:Claudio_Gutiérrez ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:impartidoPor ex:Jocelyn_Simmonds ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:impartidoPor ex:Éric_Tanter ;
+    ex:impartidoPor ex:Eduardo_Godoy ;
+    ex:impartidoPor ex:Aidan_Hogan ;
+    ex:impartidoPor ex:José_Saavedra ;
+    ex:impartidoPor ex:Nelson_Baloian ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:impartidoPor ex:Cecilia_Bastarrica ;
+    ex:poseeRequisitos ex:CC6909 ;
+    ex:departamento ex:DCC .
+
+ex:CC7010 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Pasantía de Investigación I" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC7015 rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Pasantía de Investigación II" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC7020 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Investigación Dirigida" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC7125 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Introducción a Coq: Lógica, Tipos y Verificación" ;
+    ex:impartidoPor ex:Éric_Tanter ;
+    ex:poseeRequisitos ex:CC4101 ;
+    ex:poseeRequisitos ex:MA3705 ;
+    ex:poseeRequisitos ex:MA4702 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC7220 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "La Web de Datos" ;
+    ex:impartidoPor ex:Aidan_Hogan ;
+    ex:poseeRequisitos ex:CC3201 ;
+    ex:departamento ex:DCC .
+
+ex:CC7320 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Estructuras de Datos Comprimidas" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:poseeRequisitos ex:CC4102 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC7513 rdf:type ex:Curso ;
+    ex:titulo "Análisis y Uso de Algoritmos Geométricos" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:poseeRequisitos ex:Electivo_Magíster_y_Doctorado_en_Computación ;
+    ex:departamento ex:DCC .
+
+ex:CC7910 rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Investigación en Ciencias de la Computación (Métodos, Técnicas, Perspectivas)" ;
+    ex:impartidoPor ex:Claudio_Gutiérrez ;
+    ex:poseeRequisitos ex:CC4102 ;
+    ex:poseeRequisitos ex:AUTOR ;
+    ex:departamento ex:DCC .
+
+ex:CC7920 rdf:type ex:Curso ;
+    ex:creditos 18 ;
+    ex:titulo "Introducción a la Tesis" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC7970 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis I" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:poseeRequisitos ex:CC797 ;
+    ex:departamento ex:DCC .
+
+ex:CC7980 rdf:type ex:Curso ;
+    ex:titulo "Trabajo de Tesis II" ;
+    ex:impartidoPor ex:Nancy_Hitschfeld ;
+    ex:poseeRequisitos ex:CC798 ;
+    ex:departamento ex:DCC .
+
+ex:CC8910 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis I" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC8920 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis II" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC8930 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis III" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC8940 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis IV" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC8950 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis V" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC8960 rdf:type ex:Curso ;
+    ex:creditos 30 ;
+    ex:titulo "Trabajo de Tesis VI" ;
+    ex:impartidoPor ex:Gonzalo_Navarro ;
+    ex:departamento ex:DCC .
+
+ex:CC63B rdf:type ex:Curso ;
+    ex:titulo "Gestión de Proyectos de TI" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:poseeRequisitos ex:Curso_Exclusivo_del_Magister_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC63C rdf:type ex:Curso ;
+    ex:creditos 3 ;
+    ex:titulo "Negociación de Proyectos de TI" ;
+    ex:impartidoPor ex:Marcelo_Cristián ;
+    ex:departamento ex:DCC .
+
+ex:CC63E rdf:type ex:Curso ;
+    ex:titulo "Gestión del Conocimiento" ;
+    ex:impartidoPor ex:Marcelo_Cristián ;
+    ex:poseeRequisitos ex:CURSO_EXCLUSIVO_DEL_MAGISTER_PROFESIONAL ;
+    ex:departamento ex:DCC .
+
+ex:CC63Y rdf:type ex:Curso ;
+    ex:titulo "Liderando Transformaciones desde el Sentido" ;
+    ex:impartidoPor ex:Veronica_Virgilio ;
+    ex:poseeRequisitos ex:Electivo_Magíster_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC66M rdf:type ex:Curso ;
+    ex:titulo "Algoritmos Evolutivos" ;
+    ex:impartidoPor ex:Alexandre_Bergel ;
+    ex:departamento ex:DCC .
+
+ex:CC66O rdf:type ex:Curso ;
+    ex:titulo "Inteligencia Artificial en Robótica" ;
+    ex:impartidoPor ex:Rodrigo_Verschae ;
+    ex:departamento ex:DCC .
+
+ex:CC66Q rdf:type ex:Curso ;
+    ex:titulo "Procesamiento de Lenguaje Natural" ;
+    ex:impartidoPor ex:Andrés_Abeliuk ;
+    ex:departamento ex:DCC .
+
+ex:CC66R rdf:type ex:Curso ;
+    ex:titulo "Taller de Proyecto IA" ;
+    ex:impartidoPor ex:Juan_Manuel ;
+    ex:departamento ex:DCC .
+
+ex:CC66S rdf:type ex:Curso ;
+    ex:titulo "Machine Learning" ;
+    ex:impartidoPor ex:María_José ;
+    ex:impartidoPor ex:Ignacio_Meza ;
+    ex:impartidoPor ex:Felipe_Bravo ;
+    ex:poseeRequisitos ex:Electivo_Magíster_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC66T rdf:type ex:Curso ;
+    ex:titulo "Reconocimiento Visual con Deep Learning" ;
+    ex:impartidoPor ex:José_Saavedra ;
+    ex:poseeRequisitos ex:Curso_exclusivo_del_Magíster_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC66U rdf:type ex:Curso ;
+    ex:titulo "Redes Neuronales y Deep Learning" ;
+    ex:impartidoPor ex:Iván_Sipiran ;
+    ex:poseeRequisitos ex:Curso_exclusivo_del_Magíster_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC73F rdf:type ex:Curso ;
+    ex:titulo "Avances en Bases de Datos" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Rodrigo_Frez ;
+    ex:poseeRequisitos ex:SOLO_MAGISTER_PROFESIONAL ;
+    ex:departamento ex:DCC .
+
+ex:CC73J rdf:type ex:Curso ;
+    ex:titulo "Taller de Gestión de Proyectos de TI" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Tomas_Vera ;
+    ex:poseeRequisitos ex:Electivo_del_Magíster_Profesional ;
+    ex:departamento ex:DCC .
+
+ex:CC79E rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Seminario de Proyectos de TI I" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:departamento ex:DCC .
+
+ex:CC79F rdf:type ex:Curso ;
+    ex:creditos 6 ;
+    ex:titulo "Seminario de Proyectos de TI II" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:poseeRequisitos ex:CC79E ;
+    ex:departamento ex:DCC .
+
+ex:CC79G rdf:type ex:Curso ;
+    ex:creditos 21 ;
+    ex:titulo "Proyecto de Grado I" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:poseeRequisitos ex:CC79F ;
+    ex:departamento ex:DCC .
+
+ex:CC79H rdf:type ex:Curso ;
+    ex:creditos 21 ;
+    ex:titulo "Proyecto de Grado II" ;
+    ex:impartidoPor ex:Sergio_Ochoa ;
+    ex:impartidoPor ex:Benjamín_Bustos ;
+    ex:poseeRequisitos ex:CC79G ;
+    ex:departamento ex:DCC .
+
