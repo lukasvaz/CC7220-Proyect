@@ -123,6 +123,10 @@ Ocupando  solo las tripletas de los cursos se generó el siguiente grafo:
 ![alt text](image-2.png)
 
 Lamentablemente no se logró generar un grafo con los profesores, cursos y sus relaciones.Debido a las limitaciones del playgroubd :( .
+
+## Consultas Sparql
+Se realizaron una serie de consultas, que se encuentran en la carpeta "results".
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
